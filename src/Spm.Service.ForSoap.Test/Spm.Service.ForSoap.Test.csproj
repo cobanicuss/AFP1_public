@@ -1,0 +1,138 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{782AEB71-6CAA-49C9-A9CD-F90938064E59}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Spm.Service.ForSoap.Test</RootNamespace>
+    <AssemblyName>Spm.Service.ForSoap.Test</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Moq">
+      <HintPath>..\packages\Moq.4.0.10827\NET40\Moq.dll</HintPath>
+    </Reference>
+    <Reference Include="NServiceBus.Core, Version=5.0.0.0, Culture=neutral, PublicKeyToken=9fc386479f8a226c, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\SpmReplay\packages\NServiceBus.5.2.21\lib\net45\NServiceBus.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="NServiceBus.Testing, Version=5.0.0.0, Culture=neutral, PublicKeyToken=9fc386479f8a226c, processorArchitecture=MSIL">
+      <HintPath>..\packages\NServiceBus.Testing.5.2.1\lib\net45\NServiceBus.Testing.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="nunit.framework">
+      <HintPath>..\packages\NUnit.3.2.0\lib\net40\nunit.framework.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+    <Reference Include="TestStack.BDDfy">
+      <HintPath>..\packages\TestStack.BDDfy.4.2.0\lib\net40\TestStack.BDDfy.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Hanler\Constants.cs" />
+    <Compile Include="Hanler\FromSap\GeneralLedgerFromSapHandlerTest.cs" />
+    <Compile Include="Hanler\FromSap\GoodsReceiptFromSapHandlerTest.cs" />
+    <Compile Include="Hanler\FromSap\MaterialMasterFromSapHandlerTest.cs" />
+    <Compile Include="Hanler\FromSap\MaterialMasterUpdateFromSapHandlerTest.cs" />
+    <Compile Include="Hanler\FromSap\PlannedOrderFromSapHandlerTest.cs" />
+    <Compile Include="Hanler\FromSap\ProductAchievementFromSapHandlerTest.cs" />
+    <Compile Include="Hanler\FromSap\ProductionOrderFromSapHandlerTest.cs" />
+    <Compile Include="Hanler\FromSap\ProductionOrderStatusFromSapHandlerTest.cs" />
+    <Compile Include="Hanler\FromSap\PurchaseOrderChangeFromSapHandlerTest.cs" />
+    <Compile Include="Hanler\FromSap\PurchaseOrderCreateFromSapHandlerTest.cs" />
+    <Compile Include="Hanler\FromSap\TestCertificateFromSapHandlerTest.cs" />
+    <Compile Include="Hanler\FromSap\TestCertificateRequestFromSapHandlerTest.cs" />
+    <Compile Include="Hanler\ToSap\GeneralLedgerToSapHandlerTest.cs" />
+    <Compile Include="Hanler\ToSap\GoodsReceiptToSapHandlerTest.cs" />
+    <Compile Include="Hanler\ToSap\MaterialMasterToSapHandlerTest.cs" />
+    <Compile Include="Hanler\ToSap\ProductAchievementToSapHandlerTest.cs" />
+    <Compile Include="Hanler\ToSap\ProductionOrderStatusToSapHandlerTest.cs" />
+    <Compile Include="Hanler\ToSap\PurchaseOrderChangeToSapHandlerTest.cs" />
+    <Compile Include="Hanler\ToSap\PurchaseOrderCreateToSapHandlerTest.cs" />
+    <Compile Include="Hanler\ToSap\TestCertificateToSapHandlerTest.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SoapMessageMap\GeneralLedgerMessageMapTest.cs" />
+    <Compile Include="SoapMessageMap\GoodsMessageMapTest.cs" />
+    <Compile Include="SoapMessageMap\InventoryMovementMessageMapTest.cs" />
+    <Compile Include="SoapMessageMap\MaterialMasterMessageMapTest.cs" />
+    <Compile Include="SoapMessageMap\ProductionOrderMesageMapTest.cs" />
+    <Compile Include="SoapMessageMap\PurchaseOrderMessageMapTest.cs" />
+    <Compile Include="SoapMessageMap\ResponseToSapRequestMessageMapTest.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config" />
+    <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Spm.AuditLog.Messages\Spm.AuditLog.Messages.csproj">
+      <Project>{D74073EA-A1C5-4979-8171-4F76D40312BA}</Project>
+      <Name>Spm.AuditLog.Messages</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Spm.OrrSys.Messages\Spm.OrrSys.Messages.csproj">
+      <Project>{56A10DD7-73ED-49B7-AA16-60005CF22B0F}</Project>
+      <Name>Spm.OrrSys.Messages</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Spm.OrrSys.Service\Spm.OrrSys.Service.csproj">
+      <Project>{03B95433-2796-4988-A666-A3C4F7030AED}</Project>
+      <Name>Spm.OrrSys.Service</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Spm.Service.ForSoap.Messages\Spm.Service.ForSoap.Messages.csproj">
+      <Project>{51c2ab99-f69e-4028-a737-cb4e062cbdbe}</Project>
+      <Name>Spm.Service.ForSoap.Messages</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Spm.Service.ForSoap\Spm.Service.ForSoap.csproj">
+      <Project>{D4276B2B-D3F0-416B-91BE-031B711ACF97}</Project>
+      <Name>Spm.Service.ForSoap</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Spm.Service.Messages\Spm.Service.Messages.csproj">
+      <Project>{3CE81EB8-5842-4BE2-AB05-14D1074496C8}</Project>
+      <Name>Spm.Service.Messages</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Spm.Shared\Spm.Shared.csproj">
+      <Project>{d909bd0f-c4a4-4e62-9d24-4d2de7472c74}</Project>
+      <Name>Spm.Shared</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

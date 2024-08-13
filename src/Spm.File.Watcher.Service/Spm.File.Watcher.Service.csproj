@@ -1,0 +1,244 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{764BCABC-3909-472E-B213-B96A2FB452F0}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Spm.File.Watcher.Service</RootNamespace>
+    <AssemblyName>Spm.File.Watcher.Service</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Castle.Core, Version=3.3.0.0, Culture=neutral, PublicKeyToken=407dd0808d44fbdc, processorArchitecture=MSIL">
+      <HintPath>..\packages\Castle.Core.3.3.3\lib\net45\Castle.Core.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Castle.Windsor, Version=3.3.0.0, Culture=neutral, PublicKeyToken=407dd0808d44fbdc, processorArchitecture=MSIL">
+      <HintPath>..\packages\Castle.Windsor.3.3.0\lib\net45\Castle.Windsor.dll</HintPath>
+    </Reference>
+    <Reference Include="FluentNHibernate, Version=2.0.1.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\FluentNHibernate.2.0.1.0\lib\net40\FluentNHibernate.dll</HintPath>
+    </Reference>
+    <Reference Include="Iesi.Collections, Version=4.0.0.0, Culture=neutral, PublicKeyToken=aa95f207798dfdb4, processorArchitecture=MSIL">
+      <HintPath>..\packages\Iesi.Collections.4.0.1.4000\lib\net40\Iesi.Collections.dll</HintPath>
+    </Reference>
+    <Reference Include="log4net, Version=1.2.11.0, Culture=neutral, PublicKeyToken=669e0ddf0bb1aa2a, processorArchitecture=MSIL">
+      <HintPath>..\packages\log4net.2.0.0\lib\net40-full\log4net.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="NHibernate, Version=4.0.0.4000, Culture=neutral, PublicKeyToken=aa95f207798dfdb4, processorArchitecture=MSIL">
+      <HintPath>..\packages\NHibernate.4.0.3.4000\lib\net40\NHibernate.dll</HintPath>
+    </Reference>
+    <Reference Include="NServiceBus.Core, Version=5.0.0.0, Culture=neutral, PublicKeyToken=9fc386479f8a226c, processorArchitecture=MSIL">
+      <HintPath>..\packages\NServiceBus.5.2.21\lib\net45\NServiceBus.Core.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="NServiceBus.Host, Version=5.0.0.0, Culture=neutral, PublicKeyToken=9fc386479f8a226c, processorArchitecture=MSIL">
+      <HintPath>..\packages\NServiceBus.Host.5.0.0\lib\net45\NServiceBus.Host.exe</HintPath>
+    </Reference>
+    <Reference Include="NServiceBus.Log4Net">
+      <HintPath>..\packages\NServiceBus.Log4Net.1.0.0\lib\net45\NServiceBus.Log4Net.dll</HintPath>
+    </Reference>
+    <Reference Include="NServiceBus.NHibernate, Version=6.0.0.0, Culture=neutral, PublicKeyToken=9fc386479f8a226c, processorArchitecture=MSIL">
+      <HintPath>..\packages\NServiceBus.NHibernate.6.2.5\lib\net45\NServiceBus.NHibernate.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="NServiceBus.ObjectBuilder.CastleWindsor, Version=5.0.0.0, Culture=neutral, PublicKeyToken=9fc386479f8a226c, processorArchitecture=MSIL">
+      <HintPath>..\packages\NServiceBus.CastleWindsor.5.0.0\lib\net45\NServiceBus.ObjectBuilder.CastleWindsor.dll</HintPath>
+    </Reference>
+    <Reference Include="ServiceControl.Plugin.Nsb5.Heartbeat, Version=3.0.0.0, Culture=neutral, PublicKeyToken=9fc386479f8a226c, processorArchitecture=MSIL">
+      <HintPath>..\packages\ServiceControl.Plugin.Nsb5.Heartbeat.3.0.1\lib\net45\ServiceControl.Plugin.Nsb5.Heartbeat.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Transactions" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xaml" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Config\AuditQueueConfig.cs" />
+    <Compile Include="Config\ConfigurationSource.cs" />
+    <Compile Include="Config\DateTimeConvention.cs" />
+    <Compile Include="Config\EndpointConfig.cs" />
+    <Compile Include="Config\EndpointRouting.cs" />
+    <Compile Include="Config\ErrorQueueConfig.cs" />
+    <Compile Include="Config\LoggingForProfiles.cs" />
+    <Compile Include="Config\ProfileConfig.cs" />
+    <Compile Include="Constants.cs" />
+    <Compile Include="Downloader\IMoveFiles.cs" />
+    <Compile Include="Downloader\HelpMoveFile.cs" />
+    <Compile Include="Dto\GeneralLedgerItemDto.cs" />
+    <Compile Include="Dto\GeneralLedgerSapDto.cs" />
+    <Compile Include="Dto\GoodsSagaDto.cs" />
+    <Compile Include="Dto\MaterialMasterSagaDto.cs" />
+    <Compile Include="Dto\MaterialMasterSapDto.cs" />
+    <Compile Include="Di\IocInstaller.cs" />
+    <Compile Include="Domain\CacheMapPlant.cs" />
+    <Compile Include="Domain\GeneralLedgerFileData.cs" />
+    <Compile Include="Domain\MaterialMasterFileData.cs" />
+    <Compile Include="Downloader\GeneralLedgerFileData.cs" />
+    <Compile Include="Downloader\GoodsFileData.cs" />
+    <Compile Include="Downloader\IWorkWithFiles.cs" />
+    <Compile Include="Downloader\MaterialMasterFileData.cs" />
+    <Compile Include="Downloader\PurchaseOrderFileData.cs" />
+    <Compile Include="Dto\GeneralLedgerDto.cs" />
+    <Compile Include="Dto\GeneralLedgerIdDto.cs" />
+    <Compile Include="Dto\MappingResultDto.cs" />
+    <Compile Include="Dto\ResultDto.cs" />
+    <Compile Include="Dto\MappingValidationResultDto.cs" />
+    <Compile Include="Dto\MaterialMasterDto.cs" />
+    <Compile Include="Dto\PurchseOrderSapDto.cs" />
+    <Compile Include="Handlers\GeneralLedgerHandler.cs" />
+    <Compile Include="Handlers\GoodsReceiptHandler.cs" />
+    <Compile Include="Handlers\GoodsReversalHandler.cs" />
+    <Compile Include="Handlers\MaterialMasterHandler.cs" />
+    <Compile Include="Handlers\PurchaseOrderChangeHandler.cs" />
+    <Compile Include="Handlers\PurchaseOrderCreateHandler.cs" />
+    <Compile Include="JdeToSapMapping\ConvertDecimal.cs" />
+    <Compile Include="JdeToSapMapping\CreateMappingByLineItem.cs" />
+    <Compile Include="JdeToSapMapping\ICastDto.cs" />
+    <Compile Include="JdeToSapMapping\IConvertDate.cs" />
+    <Compile Include="JdeToSapMapping\IConvertDecimal.cs" />
+    <Compile Include="JdeToSapMapping\ICreateMappingByLineItem.cs" />
+    <Compile Include="JdeToSapMapping\IMapJdeToSapBase.cs" />
+    <Compile Include="JdeToSapMapping\ConvertDate.cs" />
+    <Compile Include="Domain\GoodsFileData.cs" />
+    <Compile Include="Domain\CacheMapBranch.cs" />
+    <Compile Include="Domain\CacheMapCompanyCode.cs" />
+    <Compile Include="Domain\CacheMapCostCentreGlPosting.cs" />
+    <Compile Include="Domain\CacheMapDocTypes.cs" />
+    <Compile Include="Domain\CacheMapGlAccountsGlPosting.cs" />
+    <Compile Include="Domain\CacheMapLocation.cs" />
+    <Compile Include="Domain\CacheMapMaterialGroup.cs" />
+    <Compile Include="Domain\CacheMapProfitCentreGlPosting.cs" />
+    <Compile Include="Domain\CacheMapPurchaseGroup.cs" />
+    <Compile Include="Domain\CacheMapUnitOfMeasure.cs" />
+    <Compile Include="Domain\PurchaseOrderFileData.cs" />
+    <Compile Include="Downloader\IGetDataFromFiles.cs" />
+    <Compile Include="Downloader\FileManipulator.cs" />
+    <Compile Include="Dto\GoodsDto.cs" />
+    <Compile Include="Dto\PurchaseOrderDto.cs" />
+    <Compile Include="Persistence\FluentNHibernateMessageModule.cs" />
+    <Compile Include="Persistence\Maps\CacheMapPlantMap.cs" />
+    <Compile Include="Persistence\Maps\GeneralLedgerFileDataMap.cs" />
+    <Compile Include="Persistence\Maps\CacheMapCompanyCodeMap.cs" />
+    <Compile Include="Persistence\Maps\CacheMapCostCentreGlPostingMap.cs" />
+    <Compile Include="Persistence\Maps\CacheMapDocTypesMap.cs" />
+    <Compile Include="Persistence\Maps\CacheMapGlAccountsGlPostingMap.cs" />
+    <Compile Include="Persistence\Maps\CacheMapLocationMap.cs" />
+    <Compile Include="Persistence\Maps\CacheMapMaterialGroupMap.cs" />
+    <Compile Include="Persistence\Maps\CacheMapProfitCentreGlPostingMap.cs" />
+    <Compile Include="Persistence\Maps\CacheMapPurchaseGroupMap.cs" />
+    <Compile Include="Persistence\Maps\CacheMapUnitOfMeasureMap.cs" />
+    <Compile Include="Persistence\Maps\CacheMapBranchMap.cs" />
+    <Compile Include="Persistence\Maps\MaterialMasterFileDataMap.cs" />
+    <Compile Include="Persistence\Maps\PurchaseOrderChangeFileDataMap.cs" />
+    <Compile Include="Persistence\Maps\PurchaseOrderCreateFileDataMap.cs" />
+    <Compile Include="Repository\DataTableSetup.cs" />
+    <Compile Include="Repository\FileWatcherRepository.cs" />
+    <Compile Include="Repository\ICacheMapRepository.cs" />
+    <Compile Include="Repository\CacheMapRepository.cs" />
+    <Compile Include="Repository\IFileWatcherRepository.cs" />
+    <Compile Include="SagaData\FileWatcherSagaData.cs" />
+    <Compile Include="Sagas\FileWatcherSaga.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="JdeToSapMapping\IMapJdeToSapForGeneralLedger.cs" />
+    <Compile Include="JdeToSapMapping\IMapJdeToSapForGoods.cs" />
+    <Compile Include="JdeToSapMapping\IMapJdeToSapForPurchaseOrder.cs" />
+    <Compile Include="JdeToSapMapping\IMapPayloads.cs" />
+    <Compile Include="JdeToSapMapping\MapJdeToSapForGeneralLedger.cs" />
+    <Compile Include="JdeToSapMapping\MappingPayloads.cs" />
+    <Compile Include="JdeToSapMapping\MapJdeToSapForGoods.cs" />
+    <Compile Include="JdeToSapMapping\IDoMappingBusinessRules.cs" />
+    <Compile Include="JdeToSapMapping\IMapJdeToSapForMaterialMaster.cs" />
+    <Compile Include="JdeToSapMapping\MappingBusinessRules.cs" />
+    <Compile Include="JdeToSapMapping\MapJdeToSapForMaterialMaster.cs" />
+    <Compile Include="JdeToSapMapping\MapJdeToSapForPurchaseOrderChange.cs" />
+    <Compile Include="JdeToSapMapping\MapJdeToSapForPurchaseOrderCreate.cs" />
+    <Compile Include="JdeToSapMapping\CastDto.cs" />
+    <Compile Include="Scheduler\FileWatcherScheduler.cs" />
+    <Compile Include="Validation\ErrorDisplay.cs" />
+    <Compile Include="Validation\IDisplayErrors.cs" />
+    <Compile Include="Validation\IValidate.cs" />
+    <Compile Include="Validation\IImplementMapping.cs" />
+    <Compile Include="Validation\Validate.cs" />
+    <Compile Include="Validation\ImplementMapping.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+    <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Spm.AuditLog.Messages\Spm.AuditLog.Messages.csproj">
+      <Project>{d74073ea-a1c5-4979-8171-4f76d40312ba}</Project>
+      <Name>Spm.AuditLog.Messages</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Spm.File.Watcher.Messages\Spm.File.Watcher.Messages.csproj">
+      <Project>{b84a38e6-95e6-4c40-b923-ace65205f590}</Project>
+      <Name>Spm.File.Watcher.Messages</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Spm.OrrSys.Messages\Spm.OrrSys.Messages.csproj">
+      <Project>{56a10dd7-73ed-49b7-aa16-60005cf22b0f}</Project>
+      <Name>Spm.OrrSys.Messages</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Spm.Service.Messages\Spm.Service.Messages.csproj">
+      <Project>{3ce81eb8-5842-4be2-ab05-14d1074496c8}</Project>
+      <Name>Spm.Service.Messages</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Spm.Shared\Spm.Shared.csproj">
+      <Project>{d909bd0f-c4a4-4e62-9d24-4d2de7472c74}</Project>
+      <Name>Spm.Shared</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+  <PropertyGroup>
+    <StartAction>Program</StartAction>
+    <StartProgram>$(ProjectDir)$(OutputPath)NServiceBus.Host.exe</StartProgram>
+  </PropertyGroup>
+  <PropertyGroup>
+    <PreBuildEvent>
+    </PreBuildEvent>
+  </PropertyGroup>
+</Project>

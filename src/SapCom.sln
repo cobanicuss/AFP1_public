@@ -1,0 +1,291 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.25420.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "SpmAuditLogService", "SpmAuditLogService", "{84320E48-E760-4BDC-AEB5-C730653EF310}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "SpmService", "SpmService", "{9CE8706A-077E-4128-85FA-1F797F0BDD49}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "SapMockService", "SapMockService", "{60DF0502-DC7E-43D7-9E42-A75C9F21E156}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "SpmOrrSysService", "SpmOrrSysService", "{9AADFB24-2BE1-4F50-AD65-576FC241C485}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "SpmShared", "SpmShared", "{42A1E86E-F912-4B8E-888D-3CB4560E91E0}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "SpmFileService", "SpmFileService", "{AB203345-68F2-432B-9806-47D93EA1EEBF}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Spm.AuditLog.Service", "Spm.AuditLog.Service\Spm.AuditLog.Service.csproj", "{2D6EFBD3-AADF-419F-A125-401543277195}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Spm.Service", "Spm.Service\Spm.Service.csproj", "{0ECAB68A-C67F-41B2-9428-876B1F670A7A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Spm.AuditLog.Messages", "Spm.AuditLog.Messages\Spm.AuditLog.Messages.csproj", "{D74073EA-A1C5-4979-8171-4F76D40312BA}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Spm.Service.Messages", "Spm.Service.Messages\Spm.Service.Messages.csproj", "{3CE81EB8-5842-4BE2-AB05-14D1074496C8}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SapAsWcf", "SapAsWcf\SapAsWcf.csproj", "{15B3E0D2-6217-493A-A690-158C497F5318}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SapAsWcfHost", "SapAsWcfHost\SapAsWcfHost.csproj", "{517DC1AD-C442-4DFD-A023-DB89D821E95F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Spm.OrrSys.Service", "Spm.OrrSys.Service\Spm.OrrSys.Service.csproj", "{03B95433-2796-4988-A666-A3C4F7030AED}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Spm.OrrSys.Messages", "Spm.OrrSys.Messages\Spm.OrrSys.Messages.csproj", "{56A10DD7-73ED-49B7-AA16-60005CF22B0F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Spm.OrrSys.TestClient", "Spm.OrrSys.TestClient\Spm.OrrSys.TestClient.csproj", "{260B3545-C8E0-47E5-9076-493AC9CBA948}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Spm.Service.ReceiveFromSap", "Spm.Service.ReceiveFromSap\Spm.Service.ReceiveFromSap.csproj", "{2C504073-C234-46CE-B555-16F2B8D3E783}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Spm.Service.ReceiveFromSap.TestClient", "Spm.Service.ReceiveFromSap.TestClient\Spm.Service.ReceiveFromSap.TestClient.csproj", "{38FA7FE0-2D82-4E8F-8CA1-9EBA805FB7D8}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Spm.Shared", "Spm.Shared\Spm.Shared.csproj", "{D909BD0F-C4A4-4E62-9D24-4D2DE7472C74}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Spm.Service.ForSoap", "Spm.Service.ForSoap\Spm.Service.ForSoap.csproj", "{D4276B2B-D3F0-416B-91BE-031B711ACF97}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Spm.Service.ForSoap.Messages", "Spm.Service.ForSoap.Messages\Spm.Service.ForSoap.Messages.csproj", "{51C2AB99-F69E-4028-A737-CB4E062CBDBE}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Spm.File.Watcher.TestClient", "Spm.File.Watcher.TestClient\Spm.File.Watcher.TestClient.csproj", "{51E9C8AA-BFFE-479C-A1B5-934592620C9C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Spm.File.Watcher.Service", "Spm.File.Watcher.Service\Spm.File.Watcher.Service.csproj", "{764BCABC-3909-472E-B213-B96A2FB452F0}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "SpmServiceForSoap", "SpmServiceForSoap", "{7F410ED1-EEED-4EA0-BFA0-5CCFC91B1FDB}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Spm.File.Watcher.Messages", "Spm.File.Watcher.Messages\Spm.File.Watcher.Messages.csproj", "{B84A38E6-95E6-4C40-B923-ACE65205F590}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Spm.File.Watcher.Test", "Spm.File.Watcher.Test\Spm.File.Watcher.Test.csproj", "{252318C1-5CEF-4F88-A974-D652D7A1AA60}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Spm.OrrSys.Test", "Spm.OrrSys.Test\Spm.OrrSys.Test.csproj", "{A897EE8B-8C0C-48D5-9294-8482EA6A856F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Spm.Service.ForSoap.Test", "Spm.Service.ForSoap.Test\Spm.Service.ForSoap.Test.csproj", "{782AEB71-6CAA-49C9-A9CD-F90938064E59}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OrrSysDataInterfacingAsWcfHost", "OrrSysDataInterfacingAsWcfHost\OrrSysDataInterfacingAsWcfHost.csproj", "{9C880AFC-CE8D-498E-935F-9D3A34ED2E2A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Spm.Merged", "Spm.Merged\Spm.Merged.csproj", "{B8B2FB39-2F8F-4C31-8315-78902BD313FF}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Spm.Service.Test", "Spm.Service.Test\Spm.Service.Test.csproj", "{AE0E8846-C6A1-4B07-9697-CF85D2805E34}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{2D6EFBD3-AADF-419F-A125-401543277195}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2D6EFBD3-AADF-419F-A125-401543277195}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2D6EFBD3-AADF-419F-A125-401543277195}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2D6EFBD3-AADF-419F-A125-401543277195}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0ECAB68A-C67F-41B2-9428-876B1F670A7A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0ECAB68A-C67F-41B2-9428-876B1F670A7A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0ECAB68A-C67F-41B2-9428-876B1F670A7A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0ECAB68A-C67F-41B2-9428-876B1F670A7A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D74073EA-A1C5-4979-8171-4F76D40312BA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D74073EA-A1C5-4979-8171-4F76D40312BA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D74073EA-A1C5-4979-8171-4F76D40312BA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D74073EA-A1C5-4979-8171-4F76D40312BA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3CE81EB8-5842-4BE2-AB05-14D1074496C8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3CE81EB8-5842-4BE2-AB05-14D1074496C8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3CE81EB8-5842-4BE2-AB05-14D1074496C8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3CE81EB8-5842-4BE2-AB05-14D1074496C8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{15B3E0D2-6217-493A-A690-158C497F5318}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{15B3E0D2-6217-493A-A690-158C497F5318}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{15B3E0D2-6217-493A-A690-158C497F5318}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{15B3E0D2-6217-493A-A690-158C497F5318}.Release|Any CPU.Build.0 = Release|Any CPU
+		{517DC1AD-C442-4DFD-A023-DB89D821E95F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{517DC1AD-C442-4DFD-A023-DB89D821E95F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{517DC1AD-C442-4DFD-A023-DB89D821E95F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{517DC1AD-C442-4DFD-A023-DB89D821E95F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{03B95433-2796-4988-A666-A3C4F7030AED}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{03B95433-2796-4988-A666-A3C4F7030AED}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{03B95433-2796-4988-A666-A3C4F7030AED}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{03B95433-2796-4988-A666-A3C4F7030AED}.Release|Any CPU.Build.0 = Release|Any CPU
+		{56A10DD7-73ED-49B7-AA16-60005CF22B0F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{56A10DD7-73ED-49B7-AA16-60005CF22B0F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{56A10DD7-73ED-49B7-AA16-60005CF22B0F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{56A10DD7-73ED-49B7-AA16-60005CF22B0F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{260B3545-C8E0-47E5-9076-493AC9CBA948}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{260B3545-C8E0-47E5-9076-493AC9CBA948}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{260B3545-C8E0-47E5-9076-493AC9CBA948}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{260B3545-C8E0-47E5-9076-493AC9CBA948}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2C504073-C234-46CE-B555-16F2B8D3E783}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2C504073-C234-46CE-B555-16F2B8D3E783}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2C504073-C234-46CE-B555-16F2B8D3E783}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2C504073-C234-46CE-B555-16F2B8D3E783}.Release|Any CPU.Build.0 = Release|Any CPU
+		{38FA7FE0-2D82-4E8F-8CA1-9EBA805FB7D8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{38FA7FE0-2D82-4E8F-8CA1-9EBA805FB7D8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{38FA7FE0-2D82-4E8F-8CA1-9EBA805FB7D8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{38FA7FE0-2D82-4E8F-8CA1-9EBA805FB7D8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D909BD0F-C4A4-4E62-9D24-4D2DE7472C74}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D909BD0F-C4A4-4E62-9D24-4D2DE7472C74}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D909BD0F-C4A4-4E62-9D24-4D2DE7472C74}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D909BD0F-C4A4-4E62-9D24-4D2DE7472C74}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D4276B2B-D3F0-416B-91BE-031B711ACF97}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D4276B2B-D3F0-416B-91BE-031B711ACF97}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D4276B2B-D3F0-416B-91BE-031B711ACF97}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D4276B2B-D3F0-416B-91BE-031B711ACF97}.Release|Any CPU.Build.0 = Release|Any CPU
+		{51C2AB99-F69E-4028-A737-CB4E062CBDBE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{51C2AB99-F69E-4028-A737-CB4E062CBDBE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{51C2AB99-F69E-4028-A737-CB4E062CBDBE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{51C2AB99-F69E-4028-A737-CB4E062CBDBE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{51E9C8AA-BFFE-479C-A1B5-934592620C9C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{51E9C8AA-BFFE-479C-A1B5-934592620C9C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{51E9C8AA-BFFE-479C-A1B5-934592620C9C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{51E9C8AA-BFFE-479C-A1B5-934592620C9C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{764BCABC-3909-472E-B213-B96A2FB452F0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{764BCABC-3909-472E-B213-B96A2FB452F0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{764BCABC-3909-472E-B213-B96A2FB452F0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{764BCABC-3909-472E-B213-B96A2FB452F0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B84A38E6-95E6-4C40-B923-ACE65205F590}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B84A38E6-95E6-4C40-B923-ACE65205F590}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B84A38E6-95E6-4C40-B923-ACE65205F590}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B84A38E6-95E6-4C40-B923-ACE65205F590}.Release|Any CPU.Build.0 = Release|Any CPU
+		{252318C1-5CEF-4F88-A974-D652D7A1AA60}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{252318C1-5CEF-4F88-A974-D652D7A1AA60}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{252318C1-5CEF-4F88-A974-D652D7A1AA60}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{252318C1-5CEF-4F88-A974-D652D7A1AA60}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A897EE8B-8C0C-48D5-9294-8482EA6A856F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A897EE8B-8C0C-48D5-9294-8482EA6A856F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A897EE8B-8C0C-48D5-9294-8482EA6A856F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A897EE8B-8C0C-48D5-9294-8482EA6A856F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{782AEB71-6CAA-49C9-A9CD-F90938064E59}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{782AEB71-6CAA-49C9-A9CD-F90938064E59}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{782AEB71-6CAA-49C9-A9CD-F90938064E59}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{782AEB71-6CAA-49C9-A9CD-F90938064E59}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9C880AFC-CE8D-498E-935F-9D3A34ED2E2A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9C880AFC-CE8D-498E-935F-9D3A34ED2E2A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9C880AFC-CE8D-498E-935F-9D3A34ED2E2A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9C880AFC-CE8D-498E-935F-9D3A34ED2E2A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B8B2FB39-2F8F-4C31-8315-78902BD313FF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B8B2FB39-2F8F-4C31-8315-78902BD313FF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B8B2FB39-2F8F-4C31-8315-78902BD313FF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B8B2FB39-2F8F-4C31-8315-78902BD313FF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AE0E8846-C6A1-4B07-9697-CF85D2805E34}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AE0E8846-C6A1-4B07-9697-CF85D2805E34}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AE0E8846-C6A1-4B07-9697-CF85D2805E34}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AE0E8846-C6A1-4B07-9697-CF85D2805E34}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{2D6EFBD3-AADF-419F-A125-401543277195} = {84320E48-E760-4BDC-AEB5-C730653EF310}
+		{0ECAB68A-C67F-41B2-9428-876B1F670A7A} = {9CE8706A-077E-4128-85FA-1F797F0BDD49}
+		{D74073EA-A1C5-4979-8171-4F76D40312BA} = {84320E48-E760-4BDC-AEB5-C730653EF310}
+		{3CE81EB8-5842-4BE2-AB05-14D1074496C8} = {9CE8706A-077E-4128-85FA-1F797F0BDD49}
+		{15B3E0D2-6217-493A-A690-158C497F5318} = {60DF0502-DC7E-43D7-9E42-A75C9F21E156}
+		{517DC1AD-C442-4DFD-A023-DB89D821E95F} = {60DF0502-DC7E-43D7-9E42-A75C9F21E156}
+		{03B95433-2796-4988-A666-A3C4F7030AED} = {9AADFB24-2BE1-4F50-AD65-576FC241C485}
+		{56A10DD7-73ED-49B7-AA16-60005CF22B0F} = {9AADFB24-2BE1-4F50-AD65-576FC241C485}
+		{260B3545-C8E0-47E5-9076-493AC9CBA948} = {9AADFB24-2BE1-4F50-AD65-576FC241C485}
+		{2C504073-C234-46CE-B555-16F2B8D3E783} = {7F410ED1-EEED-4EA0-BFA0-5CCFC91B1FDB}
+		{38FA7FE0-2D82-4E8F-8CA1-9EBA805FB7D8} = {7F410ED1-EEED-4EA0-BFA0-5CCFC91B1FDB}
+		{D909BD0F-C4A4-4E62-9D24-4D2DE7472C74} = {42A1E86E-F912-4B8E-888D-3CB4560E91E0}
+		{D4276B2B-D3F0-416B-91BE-031B711ACF97} = {7F410ED1-EEED-4EA0-BFA0-5CCFC91B1FDB}
+		{51C2AB99-F69E-4028-A737-CB4E062CBDBE} = {7F410ED1-EEED-4EA0-BFA0-5CCFC91B1FDB}
+		{51E9C8AA-BFFE-479C-A1B5-934592620C9C} = {AB203345-68F2-432B-9806-47D93EA1EEBF}
+		{764BCABC-3909-472E-B213-B96A2FB452F0} = {AB203345-68F2-432B-9806-47D93EA1EEBF}
+		{B84A38E6-95E6-4C40-B923-ACE65205F590} = {AB203345-68F2-432B-9806-47D93EA1EEBF}
+		{252318C1-5CEF-4F88-A974-D652D7A1AA60} = {AB203345-68F2-432B-9806-47D93EA1EEBF}
+		{A897EE8B-8C0C-48D5-9294-8482EA6A856F} = {9AADFB24-2BE1-4F50-AD65-576FC241C485}
+		{782AEB71-6CAA-49C9-A9CD-F90938064E59} = {7F410ED1-EEED-4EA0-BFA0-5CCFC91B1FDB}
+		{9C880AFC-CE8D-498E-935F-9D3A34ED2E2A} = {9AADFB24-2BE1-4F50-AD65-576FC241C485}
+		{B8B2FB39-2F8F-4C31-8315-78902BD313FF} = {42A1E86E-F912-4B8E-888D-3CB4560E91E0}
+		{AE0E8846-C6A1-4B07-9697-CF85D2805E34} = {9CE8706A-077E-4128-85FA-1F797F0BDD49}
+	EndGlobalSection
+	GlobalSection(TeamFoundationVersionControl) = preSolution
+		SccNumberOfProjects = 24
+		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
+		SccTeamFoundationServer = http://ossql01:8080/tfs/defaultcollection
+		SccLocalPath0 = .
+		SccProjectUniqueName1 = SapAsWcf\\SapAsWcf.csproj
+		SccProjectTopLevelParentUniqueName1 = SapCom.sln
+		SccProjectName1 = SapAsWcf
+		SccLocalPath1 = SapAsWcf
+		SccProjectUniqueName2 = SapAsWcfHost\\SapAsWcfHost.csproj
+		SccProjectTopLevelParentUniqueName2 = SapCom.sln
+		SccProjectName2 = SapAsWcfHost
+		SccLocalPath2 = SapAsWcfHost
+		SccProjectUniqueName3 = Spm.AuditLog.Messages\\Spm.AuditLog.Messages.csproj
+		SccProjectTopLevelParentUniqueName3 = SapCom.sln
+		SccProjectName3 = Spm.AuditLog.Messages
+		SccLocalPath3 = Spm.AuditLog.Messages
+		SccProjectUniqueName4 = Spm.AuditLog.Service\\Spm.AuditLog.Service.csproj
+		SccProjectTopLevelParentUniqueName4 = SapCom.sln
+		SccProjectName4 = Spm.AuditLog.Service
+		SccLocalPath4 = Spm.AuditLog.Service
+		SccProjectUniqueName5 = Spm.File.Watcher.Messages\\Spm.File.Watcher.Messages.csproj
+		SccProjectTopLevelParentUniqueName5 = SapCom.sln
+		SccProjectName5 = Spm.File.Watcher.Messages
+		SccLocalPath5 = Spm.File.Watcher.Messages
+		SccProjectUniqueName6 = Spm.File.Watcher.Service\\Spm.File.Watcher.Service.csproj
+		SccProjectTopLevelParentUniqueName6 = SapCom.sln
+		SccProjectName6 = Spm.File.Watcher.Service
+		SccLocalPath6 = Spm.File.Watcher.Service
+		SccProjectUniqueName7 = Spm.File.Watcher.Test\\Spm.File.Watcher.Test.csproj
+		SccProjectTopLevelParentUniqueName7 = SapCom.sln
+		SccProjectName7 = Spm.File.Watcher.Test
+		SccLocalPath7 = Spm.File.Watcher.Test
+		SccProjectUniqueName8 = Spm.File.Watcher.TestClient\\Spm.File.Watcher.TestClient.csproj
+		SccProjectTopLevelParentUniqueName8 = SapCom.sln
+		SccProjectName8 = Spm.File.Watcher.TestClient
+		SccLocalPath8 = Spm.File.Watcher.TestClient
+		SccProjectUniqueName9 = Spm.OrrSys.Messages\\Spm.OrrSys.Messages.csproj
+		SccProjectTopLevelParentUniqueName9 = SapCom.sln
+		SccProjectName9 = Spm.OrrSys.Messages
+		SccLocalPath9 = Spm.OrrSys.Messages
+		SccProjectUniqueName10 = Spm.OrrSys.Service\\Spm.OrrSys.Service.csproj
+		SccProjectTopLevelParentUniqueName10 = SapCom.sln
+		SccProjectName10 = Spm.OrrSys.Service
+		SccLocalPath10 = Spm.OrrSys.Service
+		SccProjectUniqueName11 = Spm.OrrSys.Test\\Spm.OrrSys.Test.csproj
+		SccProjectTopLevelParentUniqueName11 = SapCom.sln
+		SccProjectName11 = Spm.OrrSys.Test
+		SccLocalPath11 = Spm.OrrSys.Test
+		SccProjectUniqueName12 = Spm.OrrSys.TestClient\\Spm.OrrSys.TestClient.csproj
+		SccProjectTopLevelParentUniqueName12 = SapCom.sln
+		SccProjectName12 = Spm.OrrSys.TestClient
+		SccLocalPath12 = Spm.OrrSys.TestClient
+		SccProjectUniqueName13 = Spm.Service.ForSoap.Messages\\Spm.Service.ForSoap.Messages.csproj
+		SccProjectTopLevelParentUniqueName13 = SapCom.sln
+		SccProjectName13 = Spm.Service.ForSoap.Messages
+		SccLocalPath13 = Spm.Service.ForSoap.Messages
+		SccProjectUniqueName14 = Spm.Service.ForSoap\\Spm.Service.ForSoap.csproj
+		SccProjectTopLevelParentUniqueName14 = SapCom.sln
+		SccProjectName14 = Spm.Service.ForSoap
+		SccLocalPath14 = Spm.Service.ForSoap
+		SccProjectUniqueName15 = Spm.Service.Messages\\Spm.Service.Messages.csproj
+		SccProjectTopLevelParentUniqueName15 = SapCom.sln
+		SccProjectName15 = Spm.Service.Messages
+		SccLocalPath15 = Spm.Service.Messages
+		SccProjectUniqueName16 = Spm.Service.ReceiveFromSap.TestClient\\Spm.Service.ReceiveFromSap.TestClient.csproj
+		SccProjectTopLevelParentUniqueName16 = SapCom.sln
+		SccProjectName16 = Spm.Service.ReceiveFromSap.TestClient
+		SccLocalPath16 = Spm.Service.ReceiveFromSap.TestClient
+		SccProjectUniqueName17 = Spm.Service.ReceiveFromSap\\Spm.Service.ReceiveFromSap.csproj
+		SccProjectTopLevelParentUniqueName17 = SapCom.sln
+		SccProjectName17 = Spm.Service.ReceiveFromSap
+		SccLocalPath17 = Spm.Service.ReceiveFromSap
+		SccProjectUniqueName18 = Spm.Service\\Spm.Service.csproj
+		SccProjectTopLevelParentUniqueName18 = SapCom.sln
+		SccProjectName18 = Spm.Service
+		SccLocalPath18 = Spm.Service
+		SccProjectUniqueName19 = Spm.Shared\\Spm.Shared.csproj
+		SccProjectTopLevelParentUniqueName19 = SapCom.sln
+		SccProjectName19 = Spm.Shared
+		SccLocalPath19 = Spm.Shared
+		SccProjectUniqueName20 = Spm.Service.ForSoap.Test\\Spm.Service.ForSoap.Test.csproj
+		SccProjectTopLevelParentUniqueName20 = SapCom.sln
+		SccProjectName20 = Spm.Service.ForSoap.Test
+		SccLocalPath20 = Spm.Service.ForSoap.Test
+		SccProjectUniqueName21 = OrrSysDataInterfacingAsWcfHost\\OrrSysDataInterfacingAsWcfHost.csproj
+		SccProjectTopLevelParentUniqueName21 = SapCom.sln
+		SccProjectName21 = OrrSysDataInterfacingAsWcfHost
+		SccLocalPath21 = OrrSysDataInterfacingAsWcfHost
+		SccProjectUniqueName22 = Spm.Merged\\Spm.Merged.csproj
+		SccProjectTopLevelParentUniqueName22 = SapCom.sln
+		SccProjectName22 = Spm.Merged
+		SccLocalPath22 = Spm.Merged
+		SccProjectUniqueName23 = Spm.Service.Test\\Spm.Service.Test.csproj
+		SccProjectTopLevelParentUniqueName23 = SapCom.sln
+		SccProjectName23 = Spm.Service.Test
+		SccLocalPath23 = Spm.Service.Test
+	EndGlobalSection
+EndGlobal

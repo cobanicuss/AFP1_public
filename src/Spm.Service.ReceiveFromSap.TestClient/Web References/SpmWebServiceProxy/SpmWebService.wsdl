@@ -1,0 +1,1964 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:tm="http://microsoft.com/wsdl/mime/textMatching/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:tns="Spm.Service.ReceiveFromSap" xmlns:s0="Spm.Service.ReceiveFromSap.Payload" xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" xmlns:s="http://www.w3.org/2001/XMLSchema" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" targetNamespace="Spm.Service.ReceiveFromSap" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <s:schema elementFormDefault="qualified" targetNamespace="Spm.Service.ReceiveFromSap.Payload">
+      <s:element name="SYSTAT01_PRODUCTACHIEVEMENTRESPONSE">
+        <s:complexType mixed="true">
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="IDOC">
+              <s:complexType mixed="true">
+                <s:sequence>
+                  <s:element minOccurs="0" maxOccurs="1" name="EDI_DC40">
+                    <s:complexType>
+                      <s:sequence>
+                        <s:element minOccurs="0" maxOccurs="1" name="TABNAM" type="s:string" />
+                        <s:element minOccurs="0" maxOccurs="1" name="DIRECT" type="s:string" />
+                        <s:element minOccurs="0" maxOccurs="1" name="IDOCTYP" type="s:string" />
+                        <s:element minOccurs="0" maxOccurs="1" name="MESTYP" type="s:string" />
+                        <s:element minOccurs="0" maxOccurs="1" name="SNDPOR" type="s:string" />
+                        <s:element minOccurs="0" maxOccurs="1" name="SNDPRT" type="s:string" />
+                        <s:element minOccurs="0" maxOccurs="1" name="SNDPRN" type="s:string" />
+                        <s:element minOccurs="0" maxOccurs="1" name="RCVPOR" type="s:string" />
+                        <s:element minOccurs="0" maxOccurs="1" name="RCVPRT" type="s:string" />
+                        <s:element minOccurs="0" maxOccurs="1" name="RCVPRN" type="s:string" />
+                      </s:sequence>
+                      <s:attribute name="SEGMENT" type="s:string" />
+                    </s:complexType>
+                  </s:element>
+                  <s:element minOccurs="0" maxOccurs="1" name="E1STATS">
+                    <s:complexType>
+                      <s:sequence>
+                        <s:element minOccurs="0" maxOccurs="1" name="DOCNUM" type="s:string" />
+                        <s:element minOccurs="0" maxOccurs="1" name="LOGDAT" type="s:string" />
+                        <s:element minOccurs="0" maxOccurs="1" name="LOGTIM" type="s:string" />
+                        <s:element minOccurs="0" maxOccurs="1" name="STATUS" type="s:string" />
+                        <s:element minOccurs="0" maxOccurs="1" name="UNAME" type="s:string" />
+                        <s:element minOccurs="0" maxOccurs="1" name="REPID" type="s:string" />
+                        <s:element minOccurs="0" maxOccurs="1" name="STACOD" type="s:string" />
+                        <s:element minOccurs="0" maxOccurs="1" name="STATXT" type="s:string" />
+                        <s:element minOccurs="0" maxOccurs="1" name="STATYP" type="s:string" />
+                      </s:sequence>
+                      <s:attribute name="SEGMENT" type="s:string" />
+                    </s:complexType>
+                  </s:element>
+                </s:sequence>
+                <s:attribute name="BEGIN" type="s:string" />
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="SYSTAT01_PURCHASEORDERCREATERESPONSE">
+        <s:complexType mixed="true">
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="IDOC">
+              <s:complexType mixed="true">
+                <s:sequence>
+                  <s:element minOccurs="0" maxOccurs="1" name="EDI_DC40">
+                    <s:complexType>
+                      <s:sequence>
+                        <s:element minOccurs="0" maxOccurs="1" name="TABNAM" type="s:string" />
+                        <s:element minOccurs="0" maxOccurs="1" name="DIRECT" type="s:string" />
+                        <s:element minOccurs="0" maxOccurs="1" name="IDOCTYP" type="s:string" />
+                        <s:element minOccurs="0" maxOccurs="1" name="MESTYP" type="s:string" />
+                        <s:element minOccurs="0" maxOccurs="1" name="SNDPOR" type="s:string" />
+                        <s:element minOccurs="0" maxOccurs="1" name="SNDPRT" type="s:string" />
+                        <s:element minOccurs="0" maxOccurs="1" name="SNDPRN" type="s:string" />
+                        <s:element minOccurs="0" maxOccurs="1" name="RCVPOR" type="s:string" />
+                        <s:element minOccurs="0" maxOccurs="1" name="RCVPRT" type="s:string" />
+                        <s:element minOccurs="0" maxOccurs="1" name="RCVPRN" type="s:string" />
+                      </s:sequence>
+                      <s:attribute name="SEGMENT" type="s:string" />
+                    </s:complexType>
+                  </s:element>
+                  <s:element minOccurs="0" maxOccurs="1" name="E1STATS">
+                    <s:complexType>
+                      <s:sequence>
+                        <s:element minOccurs="0" maxOccurs="1" name="DOCNUM" type="s:string" />
+                        <s:element minOccurs="0" maxOccurs="1" name="LOGDAT" type="s:string" />
+                        <s:element minOccurs="0" maxOccurs="1" name="LOGTIM" type="s:string" />
+                        <s:element minOccurs="0" maxOccurs="1" name="STATUS" type="s:string" />
+                        <s:element minOccurs="0" maxOccurs="1" name="UNAME" type="s:string" />
+                        <s:element minOccurs="0" maxOccurs="1" name="REPID" type="s:string" />
+                        <s:element minOccurs="0" maxOccurs="1" name="STACOD" type="s:string" />
+                        <s:element minOccurs="0" maxOccurs="1" name="STATXT" type="s:string" />
+                        <s:element minOccurs="0" maxOccurs="1" name="STATYP" type="s:string" />
+                      </s:sequence>
+                      <s:attribute name="SEGMENT" type="s:string" />
+                    </s:complexType>
+                  </s:element>
+                </s:sequence>
+                <s:attribute name="BEGIN" type="s:string" />
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="SYSTAT01_PURCHASEORDERCHANGERESPONSE">
+        <s:complexType mixed="true">
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="IDOC">
+              <s:complexType mixed="true">
+                <s:sequence>
+                  <s:element minOccurs="0" maxOccurs="1" name="EDI_DC40">
+                    <s:complexType>
+                      <s:sequence>
+                        <s:element minOccurs="0" maxOccurs="1" name="TABNAM" type="s:string" />
+                        <s:element minOccurs="0" maxOccurs="1" name="DIRECT" type="s:string" />
+                        <s:element minOccurs="0" maxOccurs="1" name="IDOCTYP" type="s:string" />
+                        <s:element minOccurs="0" maxOccurs="1" name="MESTYP" type="s:string" />
+                        <s:element minOccurs="0" maxOccurs="1" name="SNDPOR" type="s:string" />
+                        <s:element minOccurs="0" maxOccurs="1" name="SNDPRT" type="s:string" />
+                        <s:element minOccurs="0" maxOccurs="1" name="SNDPRN" type="s:string" />
+                        <s:element minOccurs="0" maxOccurs="1" name="RCVPOR" type="s:string" />
+                        <s:element minOccurs="0" maxOccurs="1" name="RCVPRT" type="s:string" />
+                        <s:element minOccurs="0" maxOccurs="1" name="RCVPRN" type="s:string" />
+                      </s:sequence>
+                      <s:attribute name="SEGMENT" type="s:string" />
+                    </s:complexType>
+                  </s:element>
+                  <s:element minOccurs="0" maxOccurs="1" name="E1STATS">
+                    <s:complexType>
+                      <s:sequence>
+                        <s:element minOccurs="0" maxOccurs="1" name="DOCNUM" type="s:string" />
+                        <s:element minOccurs="0" maxOccurs="1" name="LOGDAT" type="s:string" />
+                        <s:element minOccurs="0" maxOccurs="1" name="LOGTIM" type="s:string" />
+                        <s:element minOccurs="0" maxOccurs="1" name="STATUS" type="s:string" />
+                        <s:element minOccurs="0" maxOccurs="1" name="UNAME" type="s:string" />
+                        <s:element minOccurs="0" maxOccurs="1" name="REPID" type="s:string" />
+                        <s:element minOccurs="0" maxOccurs="1" name="STACOD" type="s:string" />
+                        <s:element minOccurs="0" maxOccurs="1" name="STATXT" type="s:string" />
+                        <s:element minOccurs="0" maxOccurs="1" name="STATYP" type="s:string" />
+                      </s:sequence>
+                      <s:attribute name="SEGMENT" type="s:string" />
+                    </s:complexType>
+                  </s:element>
+                </s:sequence>
+                <s:attribute name="BEGIN" type="s:string" />
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="SYSTAT01_PRODUCTIONORDERSTATUSRESPONSE">
+        <s:complexType mixed="true">
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="IDOC">
+              <s:complexType mixed="true">
+                <s:sequence>
+                  <s:element minOccurs="0" maxOccurs="1" name="EDI_DC40">
+                    <s:complexType>
+                      <s:sequence>
+                        <s:element minOccurs="0" maxOccurs="1" name="TABNAM" type="s:string" />
+                        <s:element minOccurs="0" maxOccurs="1" name="DIRECT" type="s:string" />
+                        <s:element minOccurs="0" maxOccurs="1" name="IDOCTYP" type="s:string" />
+                        <s:element minOccurs="0" maxOccurs="1" name="MESTYP" type="s:string" />
+                        <s:element minOccurs="0" maxOccurs="1" name="SNDPOR" type="s:string" />
+                        <s:element minOccurs="0" maxOccurs="1" name="SNDPRT" type="s:string" />
+                        <s:element minOccurs="0" maxOccurs="1" name="SNDPRN" type="s:string" />
+                        <s:element minOccurs="0" maxOccurs="1" name="RCVPOR" type="s:string" />
+                        <s:element minOccurs="0" maxOccurs="1" name="RCVPRT" type="s:string" />
+                        <s:element minOccurs="0" maxOccurs="1" name="RCVPRN" type="s:string" />
+                      </s:sequence>
+                      <s:attribute name="SEGMENT" type="s:string" />
+                    </s:complexType>
+                  </s:element>
+                  <s:element minOccurs="0" maxOccurs="1" name="E1STATS">
+                    <s:complexType>
+                      <s:sequence>
+                        <s:element minOccurs="0" maxOccurs="1" name="DOCNUM" type="s:string" />
+                        <s:element minOccurs="0" maxOccurs="1" name="LOGDAT" type="s:string" />
+                        <s:element minOccurs="0" maxOccurs="1" name="LOGTIM" type="s:string" />
+                        <s:element minOccurs="0" maxOccurs="1" name="STATUS" type="s:string" />
+                        <s:element minOccurs="0" maxOccurs="1" name="UNAME" type="s:string" />
+                        <s:element minOccurs="0" maxOccurs="1" name="REPID" type="s:string" />
+                        <s:element minOccurs="0" maxOccurs="1" name="STACOD" type="s:string" />
+                        <s:element minOccurs="0" maxOccurs="1" name="STATXT" type="s:string" />
+                        <s:element minOccurs="0" maxOccurs="1" name="STATYP" type="s:string" />
+                      </s:sequence>
+                      <s:attribute name="SEGMENT" type="s:string" />
+                    </s:complexType>
+                  </s:element>
+                </s:sequence>
+                <s:attribute name="BEGIN" type="s:string" />
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="SYSTAT01_GOODSRECEIPTRESPONSE">
+        <s:complexType mixed="true">
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="IDOC">
+              <s:complexType mixed="true">
+                <s:sequence>
+                  <s:element minOccurs="0" maxOccurs="1" name="EDI_DC40">
+                    <s:complexType>
+                      <s:sequence>
+                        <s:element minOccurs="0" maxOccurs="1" name="TABNAM" type="s:string" />
+                        <s:element minOccurs="0" maxOccurs="1" name="DIRECT" type="s:string" />
+                        <s:element minOccurs="0" maxOccurs="1" name="IDOCTYP" type="s:string" />
+                        <s:element minOccurs="0" maxOccurs="1" name="MESTYP" type="s:string" />
+                        <s:element minOccurs="0" maxOccurs="1" name="SNDPOR" type="s:string" />
+                        <s:element minOccurs="0" maxOccurs="1" name="SNDPRT" type="s:string" />
+                        <s:element minOccurs="0" maxOccurs="1" name="SNDPRN" type="s:string" />
+                        <s:element minOccurs="0" maxOccurs="1" name="RCVPOR" type="s:string" />
+                        <s:element minOccurs="0" maxOccurs="1" name="RCVPRT" type="s:string" />
+                        <s:element minOccurs="0" maxOccurs="1" name="RCVPRN" type="s:string" />
+                      </s:sequence>
+                      <s:attribute name="SEGMENT" type="s:string" />
+                    </s:complexType>
+                  </s:element>
+                  <s:element minOccurs="0" maxOccurs="1" name="E1STATS">
+                    <s:complexType>
+                      <s:sequence>
+                        <s:element minOccurs="0" maxOccurs="1" name="DOCNUM" type="s:string" />
+                        <s:element minOccurs="0" maxOccurs="1" name="LOGDAT" type="s:string" />
+                        <s:element minOccurs="0" maxOccurs="1" name="LOGTIM" type="s:string" />
+                        <s:element minOccurs="0" maxOccurs="1" name="STATUS" type="s:string" />
+                        <s:element minOccurs="0" maxOccurs="1" name="UNAME" type="s:string" />
+                        <s:element minOccurs="0" maxOccurs="1" name="REPID" type="s:string" />
+                        <s:element minOccurs="0" maxOccurs="1" name="STACOD" type="s:string" />
+                        <s:element minOccurs="0" maxOccurs="1" name="STATXT" type="s:string" />
+                        <s:element minOccurs="0" maxOccurs="1" name="STATYP" type="s:string" />
+                      </s:sequence>
+                      <s:attribute name="SEGMENT" type="s:string" />
+                    </s:complexType>
+                  </s:element>
+                </s:sequence>
+                <s:attribute name="BEGIN" type="s:string" />
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="SYSTAT01_MATERIALMASTERRESPONSE">
+        <s:complexType mixed="true">
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="IDOC">
+              <s:complexType mixed="true">
+                <s:sequence>
+                  <s:element minOccurs="0" maxOccurs="1" name="EDI_DC40">
+                    <s:complexType>
+                      <s:sequence>
+                        <s:element minOccurs="0" maxOccurs="1" name="TABNAM" type="s:string" />
+                        <s:element minOccurs="0" maxOccurs="1" name="DIRECT" type="s:string" />
+                        <s:element minOccurs="0" maxOccurs="1" name="IDOCTYP" type="s:string" />
+                        <s:element minOccurs="0" maxOccurs="1" name="MESTYP" type="s:string" />
+                        <s:element minOccurs="0" maxOccurs="1" name="SNDPOR" type="s:string" />
+                        <s:element minOccurs="0" maxOccurs="1" name="SNDPRT" type="s:string" />
+                        <s:element minOccurs="0" maxOccurs="1" name="SNDPRN" type="s:string" />
+                        <s:element minOccurs="0" maxOccurs="1" name="RCVPOR" type="s:string" />
+                        <s:element minOccurs="0" maxOccurs="1" name="RCVPRT" type="s:string" />
+                        <s:element minOccurs="0" maxOccurs="1" name="RCVPRN" type="s:string" />
+                      </s:sequence>
+                      <s:attribute name="SEGMENT" type="s:string" />
+                    </s:complexType>
+                  </s:element>
+                  <s:element minOccurs="0" maxOccurs="1" name="E1STATS">
+                    <s:complexType>
+                      <s:sequence>
+                        <s:element minOccurs="0" maxOccurs="1" name="DOCNUM" type="s:string" />
+                        <s:element minOccurs="0" maxOccurs="1" name="LOGDAT" type="s:string" />
+                        <s:element minOccurs="0" maxOccurs="1" name="LOGTIM" type="s:string" />
+                        <s:element minOccurs="0" maxOccurs="1" name="STATUS" type="s:string" />
+                        <s:element minOccurs="0" maxOccurs="1" name="UNAME" type="s:string" />
+                        <s:element minOccurs="0" maxOccurs="1" name="REPID" type="s:string" />
+                        <s:element minOccurs="0" maxOccurs="1" name="STACOD" type="s:string" />
+                        <s:element minOccurs="0" maxOccurs="1" name="STATXT" type="s:string" />
+                        <s:element minOccurs="0" maxOccurs="1" name="STATYP" type="s:string" />
+                      </s:sequence>
+                      <s:attribute name="SEGMENT" type="s:string" />
+                    </s:complexType>
+                  </s:element>
+                </s:sequence>
+                <s:attribute name="BEGIN" type="s:string" />
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ZOBTC01">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="IDOC">
+              <s:complexType>
+                <s:sequence>
+                  <s:element minOccurs="0" maxOccurs="1" name="EDI_DC40">
+                    <s:complexType>
+                      <s:sequence>
+                        <s:element minOccurs="0" maxOccurs="1" name="TABNAM" type="s:string" />
+                        <s:element minOccurs="0" maxOccurs="1" name="MANDT" type="s:string" />
+                        <s:element minOccurs="0" maxOccurs="1" name="DOCNUM" type="s:string" />
+                        <s:element minOccurs="0" maxOccurs="1" name="DOCREL" type="s:string" />
+                        <s:element minOccurs="0" maxOccurs="1" name="STATUS" type="s:string" />
+                        <s:element minOccurs="1" maxOccurs="1" name="DIRECT">
+                          <s:simpleType>
+                            <s:restriction base="s:string">
+                              <s:enumeration value="1" />
+                              <s:enumeration value="2" />
+                            </s:restriction>
+                          </s:simpleType>
+                        </s:element>
+                        <s:element minOccurs="0" maxOccurs="1" name="OUTMOD" type="s:string" />
+                        <s:element minOccurs="0" maxOccurs="1" name="EXPRSS" type="s:string" />
+                        <s:element minOccurs="0" maxOccurs="1" name="TEST" type="s:string" />
+                        <s:element minOccurs="0" maxOccurs="1" name="IDOCTYP" type="s:string" />
+                        <s:element minOccurs="0" maxOccurs="1" name="CIMTYP" type="s:string" />
+                        <s:element minOccurs="0" maxOccurs="1" name="MESTYP" type="s:string" />
+                        <s:element minOccurs="0" maxOccurs="1" name="MESCOD" type="s:string" />
+                        <s:element minOccurs="0" maxOccurs="1" name="MESFCT" type="s:string" />
+                        <s:element minOccurs="0" maxOccurs="1" name="STD" type="s:string" />
+                        <s:element minOccurs="0" maxOccurs="1" name="STDVRS" type="s:string" />
+                        <s:element minOccurs="0" maxOccurs="1" name="STDMES" type="s:string" />
+                        <s:element minOccurs="0" maxOccurs="1" name="SNDPOR" type="s:string" />
+                        <s:element minOccurs="0" maxOccurs="1" name="SNDPRT" type="s:string" />
+                        <s:element minOccurs="0" maxOccurs="1" name="SNDPFC" type="s:string" />
+                        <s:element minOccurs="0" maxOccurs="1" name="SNDPRN" type="s:string" />
+                        <s:element minOccurs="0" maxOccurs="1" name="SNDSAD" type="s:string" />
+                        <s:element minOccurs="0" maxOccurs="1" name="SNDLAD" type="s:string" />
+                        <s:element minOccurs="0" maxOccurs="1" name="RCVPOR" type="s:string" />
+                        <s:element minOccurs="0" maxOccurs="1" name="RCVPRT" type="s:string" />
+                        <s:element minOccurs="0" maxOccurs="1" name="RCVPFC" type="s:string" />
+                        <s:element minOccurs="0" maxOccurs="1" name="RCVPRN" type="s:string" />
+                        <s:element minOccurs="0" maxOccurs="1" name="RCVSAD" type="s:string" />
+                        <s:element minOccurs="0" maxOccurs="1" name="RCVLAD" type="s:string" />
+                        <s:element minOccurs="0" maxOccurs="1" name="CREDAT" type="s:string" />
+                        <s:element minOccurs="0" maxOccurs="1" name="CRETIM" type="s:string" />
+                        <s:element minOccurs="0" maxOccurs="1" name="REFINT" type="s:string" />
+                        <s:element minOccurs="0" maxOccurs="1" name="REFGRP" type="s:string" />
+                        <s:element minOccurs="0" maxOccurs="1" name="REFMES" type="s:string" />
+                        <s:element minOccurs="0" maxOccurs="1" name="ARCKEY" type="s:string" />
+                        <s:element minOccurs="0" maxOccurs="1" name="SERIAL" type="s:string" />
+                      </s:sequence>
+                      <s:attribute name="SEGMENT" type="s:string" />
+                    </s:complexType>
+                  </s:element>
+                  <s:element minOccurs="0" maxOccurs="unbounded" name="Z1TCLIN">
+                    <s:complexType>
+                      <s:sequence>
+                        <s:element minOccurs="0" maxOccurs="1" name="VBELV" type="s:string" />
+                        <s:element minOccurs="0" maxOccurs="1" name="VBELN" type="s:string" />
+                        <s:element minOccurs="0" maxOccurs="1" name="KUNNR" type="s:string" />
+                        <s:element minOccurs="0" maxOccurs="1" name="NAME1" type="s:string" />
+                        <s:element minOccurs="0" maxOccurs="1" name="HEAT" type="s:string" />
+                        <s:element minOccurs="0" maxOccurs="1" name="MATNR" type="s:string" />
+                        <s:element minOccurs="0" maxOccurs="1" name="WADAT_IST" type="s:string" />
+                        <s:element minOccurs="0" maxOccurs="1" name="SHIPTO" type="s:string" />
+                        <s:element minOccurs="0" maxOccurs="1" name="PURCHASEORDER" type="s:string" />
+                        <s:element minOccurs="0" maxOccurs="unbounded" name="Z1TCEML">
+                          <s:complexType>
+                            <s:sequence>
+                              <s:element minOccurs="0" maxOccurs="1" name="EMAIL" type="s:string" />
+                            </s:sequence>
+                            <s:attribute name="SEGMENT" type="s:string" />
+                          </s:complexType>
+                        </s:element>
+                      </s:sequence>
+                      <s:attribute name="SEGMENT" type="s:string" />
+                    </s:complexType>
+                  </s:element>
+                </s:sequence>
+                <s:attribute name="BEGIN" type="s:string" />
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ZMATMAS5">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="IDOC">
+              <s:complexType>
+                <s:sequence>
+                  <s:element minOccurs="0" maxOccurs="1" name="EDI_DC40">
+                    <s:complexType>
+                      <s:sequence>
+                        <s:element minOccurs="0" maxOccurs="1" name="TABNAM" type="s:string" />
+                        <s:element minOccurs="0" maxOccurs="1" name="MANDT" type="s:string" />
+                        <s:element minOccurs="0" maxOccurs="1" name="DOCNUM" type="s:string" />
+                        <s:element minOccurs="0" maxOccurs="1" name="DOCREL" type="s:string" />
+                        <s:element minOccurs="0" maxOccurs="1" name="STATUS" type="s:string" />
+                        <s:element minOccurs="1" maxOccurs="1" name="DIRECT">
+                          <s:simpleType>
+                            <s:restriction base="s:string">
+                              <s:enumeration value="1" />
+                              <s:enumeration value="2" />
+                            </s:restriction>
+                          </s:simpleType>
+                        </s:element>
+                        <s:element minOccurs="0" maxOccurs="1" name="OUTMOD" type="s:string" />
+                        <s:element minOccurs="0" maxOccurs="1" name="EXPRSS" type="s:string" />
+                        <s:element minOccurs="0" maxOccurs="1" name="TEST" type="s:string" />
+                        <s:element minOccurs="0" maxOccurs="1" name="IDOCTYP" type="s:string" />
+                        <s:element minOccurs="0" maxOccurs="1" name="CIMTYP" type="s:string" />
+                        <s:element minOccurs="0" maxOccurs="1" name="MESTYP" type="s:string" />
+                        <s:element minOccurs="0" maxOccurs="1" name="MESCOD" type="s:string" />
+                        <s:element minOccurs="0" maxOccurs="1" name="MESFCT" type="s:string" />
+                        <s:element minOccurs="0" maxOccurs="1" name="STD" type="s:string" />
+                        <s:element minOccurs="0" maxOccurs="1" name="STDVRS" type="s:string" />
+                        <s:element minOccurs="0" maxOccurs="1" name="STDMES" type="s:string" />
+                        <s:element minOccurs="0" maxOccurs="1" name="SNDPOR" type="s:string" />
+                        <s:element minOccurs="0" maxOccurs="1" name="SNDPRT" type="s:string" />
+                        <s:element minOccurs="0" maxOccurs="1" name="SNDPFC" type="s:string" />
+                        <s:element minOccurs="0" maxOccurs="1" name="SNDPRN" type="s:string" />
+                        <s:element minOccurs="0" maxOccurs="1" name="SNDSAD" type="s:string" />
+                        <s:element minOccurs="0" maxOccurs="1" name="SNDLAD" type="s:string" />
+                        <s:element minOccurs="0" maxOccurs="1" name="RCVPOR" type="s:string" />
+                        <s:element minOccurs="0" maxOccurs="1" name="RCVPRT" type="s:string" />
+                        <s:element minOccurs="0" maxOccurs="1" name="RCVPFC" type="s:string" />
+                        <s:element minOccurs="0" maxOccurs="1" name="RCVPRN" type="s:string" />
+                        <s:element minOccurs="0" maxOccurs="1" name="RCVSAD" type="s:string" />
+                        <s:element minOccurs="0" maxOccurs="1" name="RCVLAD" type="s:string" />
+                        <s:element minOccurs="0" maxOccurs="1" name="CREDAT" type="s:string" />
+                        <s:element minOccurs="0" maxOccurs="1" name="CRETIM" type="s:string" />
+                        <s:element minOccurs="0" maxOccurs="1" name="REFINT" type="s:string" />
+                        <s:element minOccurs="0" maxOccurs="1" name="REFGRP" type="s:string" />
+                        <s:element minOccurs="0" maxOccurs="1" name="REFMES" type="s:string" />
+                        <s:element minOccurs="0" maxOccurs="1" name="ARCKEY" type="s:string" />
+                        <s:element minOccurs="0" maxOccurs="1" name="SERIAL" type="s:string" />
+                      </s:sequence>
+                      <s:attribute name="SEGMENT" type="s:string" />
+                    </s:complexType>
+                  </s:element>
+                  <s:element minOccurs="0" maxOccurs="unbounded" name="E1MARAM">
+                    <s:complexType>
+                      <s:sequence>
+                        <s:element minOccurs="0" maxOccurs="1" name="MSGFN" type="s:string" />
+                        <s:element minOccurs="0" maxOccurs="1" name="MATNR" type="s:string" />
+                        <s:element minOccurs="0" maxOccurs="1" name="ERSDA" type="s:string" />
+                        <s:element minOccurs="0" maxOccurs="1" name="ERNAM" type="s:string" />
+                        <s:element minOccurs="0" maxOccurs="1" name="LAEDA" type="s:string" />
+                        <s:element minOccurs="0" maxOccurs="1" name="AENAM" type="s:string" />
+                        <s:element minOccurs="0" maxOccurs="1" name="PSTAT" type="s:string" />
+                        <s:element minOccurs="0" maxOccurs="1" name="LVORM" type="s:string" />
+                        <s:element minOccurs="0" maxOccurs="1" name="MTART" type="s:string" />
+                        <s:element minOccurs="0" maxOccurs="1" name="MBRSH" type="s:string" />
+                        <s:element minOccurs="0" maxOccurs="1" name="MATKL" type="s:string" />
+                        <s:element minOccurs="0" maxOccurs="1" name="BISMT" type="s:string" />
+                        <s:element minOccurs="0" maxOccurs="1" name="MEINS" type="s:string" />
+                        <s:element minOccurs="0" maxOccurs="1" name="BSTME" type="s:string" />
+                        <s:element minOccurs="0" maxOccurs="1" name="ZEINR" type="s:string" />
+                        <s:element minOccurs="0" maxOccurs="1" name="ZEIAR" type="s:string" />
+                        <s:element minOccurs="0" maxOccurs="1" name="ZEIVR" type="s:string" />
+                        <s:element minOccurs="0" maxOccurs="1" name="ZEIFO" type="s:string" />
+                        <s:element minOccurs="0" maxOccurs="1" name="AESZN" type="s:string" />
+                        <s:element minOccurs="0" maxOccurs="1" name="BLATT" type="s:string" />
+                        <s:element minOccurs="0" maxOccurs="1" name="BLANZ" type="s:string" />
+                        <s:element minOccurs="0" maxOccurs="1" name="FERTH" type="s:string" />
+                        <s:element minOccurs="0" maxOccurs="1" name="FORMT" type="s:string" />
+                        <s:element minOccurs="0" maxOccurs="1" name="GROES" type="s:string" />
+                        <s:element minOccurs="0" maxOccurs="1" name="WRKST" type="s:string" />
+                        <s:element minOccurs="0" maxOccurs="1" name="NORMT" type="s:string" />
+                        <s:element minOccurs="0" maxOccurs="1" name="LABOR" type="s:string" />
+                        <s:element minOccurs="0" maxOccurs="1" name="EKWSL" type="s:string" />
+                        <s:element minOccurs="0" maxOccurs="1" name="BRGEW" type="s:string" />
+                        <s:element minOccurs="0" maxOccurs="1" name="NTGEW" type="s:string" />
+                        <s:element minOccurs="0" maxOccurs="1" name="GEWEI" type="s:string" />
+                        <s:element minOccurs="0" maxOccurs="1" name="VOLUM" type="s:string" />
+                        <s:element minOccurs="0" maxOccurs="1" name="VOLEH" type="s:string" />
+                        <s:element minOccurs="0" maxOccurs="1" name="BEHVO" type="s:string" />
+                        <s:element minOccurs="0" maxOccurs="1" name="RAUBE" type="s:string" />
+                        <s:element minOccurs="0" maxOccurs="1" name="TEMPB" type="s:string" />
+                        <s:element minOccurs="0" maxOccurs="1" name="TRAGR" type="s:string" />
+                        <s:element minOccurs="0" maxOccurs="1" name="STOFF" type="s:string" />
+                        <s:element minOccurs="0" maxOccurs="1" name="SPART" type="s:string" />
+                        <s:element minOccurs="0" maxOccurs="1" name="KUNNR" type="s:string" />
+                        <s:element minOccurs="0" maxOccurs="1" name="WESCH" type="s:string" />
+                        <s:element minOccurs="0" maxOccurs="1" name="BWVOR" type="s:string" />
+                        <s:element minOccurs="0" maxOccurs="1" name="BWSCL" type="s:string" />
+                        <s:element minOccurs="0" maxOccurs="1" name="SAISO" type="s:string" />
+                        <s:element minOccurs="0" maxOccurs="1" name="ETIAR" type="s:string" />
+                        <s:element minOccurs="0" maxOccurs="1" name="ETIFO" type="s:string" />
+                        <s:element minOccurs="0" maxOccurs="1" name="EAN11" type="s:string" />
+                        <s:element minOccurs="0" maxOccurs="1" name="NUMTP" type="s:string" />
+                        <s:element minOccurs="0" maxOccurs="1" name="LAENG" type="s:string" />
+                        <s:element minOccurs="0" maxOccurs="1" name="BREIT" type="s:string" />
+                        <s:element minOccurs="0" maxOccurs="1" name="HOEHE" type="s:string" />
+                        <s:element minOccurs="0" maxOccurs="1" name="MEABM" type="s:string" />
+                        <s:element minOccurs="0" maxOccurs="1" name="PRDHA" type="s:string" />
+                        <s:element minOccurs="0" maxOccurs="1" name="CADKZ" type="s:string" />
+                        <s:element minOccurs="0" maxOccurs="1" name="ERGEW" type="s:string" />
+                        <s:element minOccurs="0" maxOccurs="1" name="ERGEI" type="s:string" />
+                        <s:element minOccurs="0" maxOccurs="1" name="ERVOL" type="s:string" />
+                        <s:element minOccurs="0" maxOccurs="1" name="ERVOE" type="s:string" />
+                        <s:element minOccurs="0" maxOccurs="1" name="GEWTO" type="s:string" />
+                        <s:element minOccurs="0" maxOccurs="1" name="VOLTO" type="s:string" />
+                        <s:element minOccurs="0" maxOccurs="1" name="VABME" type="s:string" />
+                        <s:element minOccurs="0" maxOccurs="1" name="KZKFG" type="s:string" />
+                        <s:element minOccurs="0" maxOccurs="1" name="XCHPF" type="s:string" />
+                        <s:element minOccurs="0" maxOccurs="1" name="VHART" type="s:string" />
+                        <s:element minOccurs="0" maxOccurs="1" name="FUELG" type="s:string" />
+                        <s:element minOccurs="0" maxOccurs="1" name="STFAK" type="s:string" />
+                        <s:element minOccurs="0" maxOccurs="1" name="MAGRV" type="s:string" />
+                        <s:element minOccurs="0" maxOccurs="1" name="BEGRU" type="s:string" />
+                        <s:element minOccurs="0" maxOccurs="1" name="QMPUR" type="s:string" />
+                        <s:element minOccurs="0" maxOccurs="1" name="RBNRM" type="s:string" />
+                        <s:element minOccurs="0" maxOccurs="1" name="MHDRZ" type="s:string" />
+                        <s:element minOccurs="0" maxOccurs="1" name="MHDHB" type="s:string" />
+                        <s:element minOccurs="0" maxOccurs="1" name="MHDLP" type="s:string" />
+                        <s:element minOccurs="0" maxOccurs="1" name="VPSTA" type="s:string" />
+                        <s:element minOccurs="0" maxOccurs="1" name="EXTWG" type="s:string" />
+                        <s:element minOccurs="0" maxOccurs="1" name="MSTAE" type="s:string" />
+                        <s:element minOccurs="0" maxOccurs="1" name="MSTAV" type="s:string" />
+                        <s:element minOccurs="0" maxOccurs="1" name="MSTDE" type="s:string" />
+                        <s:element minOccurs="0" maxOccurs="1" name="MSTDV" type="s:string" />
+                        <s:element minOccurs="0" maxOccurs="1" name="KZUMW" type="s:string" />
+                        <s:element minOccurs="0" maxOccurs="1" name="KOSCH" type="s:string" />
+                        <s:element minOccurs="0" maxOccurs="1" name="NRFHG" type="s:string" />
+                        <s:element minOccurs="0" maxOccurs="1" name="MFRPN" type="s:string" />
+                        <s:element minOccurs="0" maxOccurs="1" name="MFRNR" type="s:string" />
+                        <s:element minOccurs="0" maxOccurs="1" name="BMATN" type="s:string" />
+                        <s:element minOccurs="0" maxOccurs="1" name="MPROF" type="s:string" />
+                        <s:element minOccurs="0" maxOccurs="1" name="PROFL" type="s:string" />
+                        <s:element minOccurs="0" maxOccurs="1" name="IHIVI" type="s:string" />
+                        <s:element minOccurs="0" maxOccurs="1" name="ILOOS" type="s:string" />
+                        <s:element minOccurs="0" maxOccurs="1" name="KZGVH" type="s:string" />
+                        <s:element minOccurs="0" maxOccurs="1" name="XGCHP" type="s:string" />
+                        <s:element minOccurs="0" maxOccurs="1" name="COMPL" type="s:string" />
+                        <s:element minOccurs="0" maxOccurs="1" name="KZEFF" type="s:string" />
+                        <s:element minOccurs="0" maxOccurs="1" name="RDMHD" type="s:string" />
+                        <s:element minOccurs="0" maxOccurs="1" name="IPRKZ" type="s:string" />
+                        <s:element minOccurs="0" maxOccurs="1" name="PRZUS" type="s:string" />
+                        <s:element minOccurs="0" maxOccurs="1" name="MTPOS_MARA" type="s:string" />
+                        <s:element minOccurs="0" maxOccurs="1" name="GEWTO_NEW" type="s:string" />
+                        <s:element minOccurs="0" maxOccurs="1" name="VOLTO_NEW" type="s:string" />
+                        <s:element minOccurs="0" maxOccurs="1" name="WRKST_NEW" type="s:string" />
+                        <s:element minOccurs="0" maxOccurs="1" name="AENNR" type="s:string" />
+                        <s:element minOccurs="0" maxOccurs="1" name="MATFI" type="s:string" />
+                        <s:element minOccurs="0" maxOccurs="1" name="CMREL" type="s:string" />
+                        <s:element minOccurs="0" maxOccurs="1" name="SATNR" type="s:string" />
+                        <s:element minOccurs="0" maxOccurs="1" name="SLED_BBD" type="s:string" />
+                        <s:element minOccurs="0" maxOccurs="1" name="GTIN_VARIANT" type="s:string" />
+                        <s:element minOccurs="0" maxOccurs="1" name="GENNR" type="s:string" />
+                        <s:element minOccurs="0" maxOccurs="1" name="SERLV" type="s:string" />
+                        <s:element minOccurs="0" maxOccurs="1" name="RMATP" type="s:string" />
+                        <s:element minOccurs="0" maxOccurs="1" name="GDS_RELEVANT" type="s:string" />
+                        <s:element minOccurs="0" maxOccurs="1" name="MCOND" type="s:string" />
+                        <s:element minOccurs="0" maxOccurs="1" name="RETDELC" type="s:string" />
+                        <s:element minOccurs="0" maxOccurs="1" name="LOGLEV_RETO" type="s:string" />
+                        <s:element minOccurs="0" maxOccurs="1" name="NSNID" type="s:string" />
+                        <s:element minOccurs="0" maxOccurs="1" name="WEORA" type="s:string" />
+                        <s:element minOccurs="0" maxOccurs="1" name="_-CWM_-TOLGR" type="s:string" />
+                        <s:element minOccurs="0" maxOccurs="1" name="_-CWM_-TARA" type="s:string" />
+                        <s:element minOccurs="0" maxOccurs="1" name="_-CWM_-TARUM" type="s:string" />
+                        <s:element minOccurs="0" maxOccurs="1" name="PACKCODE" type="s:string" />
+                        <s:element minOccurs="0" maxOccurs="1" name="DG_PACK_STATUS" type="s:string" />
+                        <s:element minOccurs="0" maxOccurs="unbounded" name="Z1MARAM">
+                          <s:complexType>
+                            <s:sequence>
+                              <s:element minOccurs="0" maxOccurs="1" name="ZZSAN" type="s:string" />
+                              <s:element minOccurs="0" maxOccurs="1" name="ZZSECT" type="s:string" />
+                              <s:element minOccurs="0" maxOccurs="1" name="ZZQULN" type="s:string" />
+                              <s:element minOccurs="0" maxOccurs="1" name="ZZPCSN" type="s:string" />
+                              <s:element minOccurs="0" maxOccurs="1" name="ZZPRTN" type="s:string" />
+                              <s:element minOccurs="0" maxOccurs="1" name="ZZDM1N" type="s:string" />
+                              <s:element minOccurs="0" maxOccurs="1" name="ZZDM2N" type="s:string" />
+                              <s:element minOccurs="0" maxOccurs="1" name="ZZDM3N" type="s:string" />
+                              <s:element minOccurs="0" maxOccurs="1" name="ZZDM4N" type="s:string" />
+                              <s:element minOccurs="0" maxOccurs="1" name="ZZDM5N" type="s:string" />
+                              <s:element minOccurs="0" maxOccurs="1" name="ZZEXCN" type="s:string" />
+                              <s:element minOccurs="0" maxOccurs="1" name="ZZCOL1" type="s:string" />
+                              <s:element minOccurs="0" maxOccurs="1" name="ZZCOL2" type="s:string" />
+                              <s:element minOccurs="0" maxOccurs="1" name="ZZPCOA" type="s:string" />
+                              <s:element minOccurs="0" maxOccurs="1" name="ZZDIPA" type="s:string" />
+                              <s:element minOccurs="0" maxOccurs="1" name="ZZBRAN" type="s:string" />
+                              <s:element minOccurs="0" maxOccurs="1" name="ZZWTHI" type="s:string" />
+                              <s:element minOccurs="0" maxOccurs="1" name="ZZENCN" type="s:string" />
+                              <s:element minOccurs="0" maxOccurs="1" name="ZZLCLN" type="s:string" />
+                              <s:element minOccurs="0" maxOccurs="1" name="ZZHDNN" type="s:string" />
+                              <s:element minOccurs="0" maxOccurs="1" name="ZZHTCN" type="s:string" />
+                              <s:element minOccurs="0" maxOccurs="1" name="ZZPDNN" type="s:string" />
+                              <s:element minOccurs="0" maxOccurs="1" name="ZZFTYP" type="s:string" />
+                              <s:element minOccurs="0" maxOccurs="1" name="ZZPRFN" type="s:string" />
+                              <s:element minOccurs="0" maxOccurs="1" name="ZZCONN" type="s:string" />
+                              <s:element minOccurs="0" maxOccurs="1" name="ZZBOSE" type="s:string" />
+                              <s:element minOccurs="0" maxOccurs="1" name="ZZGLOS" type="s:string" />
+                              <s:element minOccurs="0" maxOccurs="1" name="ZZGSPE" type="s:string" />
+                              <s:element minOccurs="0" maxOccurs="1" name="ZZDESC" type="s:string" />
+                              <s:element minOccurs="0" maxOccurs="1" name="ZZMCAT" type="s:string" />
+                              <s:element minOccurs="0" maxOccurs="1" name="ZZTEM1" type="s:string" />
+                              <s:element minOccurs="0" maxOccurs="1" name="ZZTEM2" type="s:string" />
+                              <s:element minOccurs="0" maxOccurs="1" name="ZZTEM3" type="s:string" />
+                              <s:element minOccurs="0" maxOccurs="1" name="ZZTEM4" type="s:string" />
+                              <s:element minOccurs="0" maxOccurs="1" name="ZZTEM5" type="s:string" />
+                              <s:element minOccurs="0" maxOccurs="1" name="ZZREJT" type="s:string" />
+                              <s:element minOccurs="0" maxOccurs="1" name="ZZALTM" type="s:string" />
+                              <s:element minOccurs="0" maxOccurs="1" name="ZZCGAG" type="s:string" />
+                              <s:element minOccurs="0" maxOccurs="1" name="ZZTYP2" type="s:string" />
+                              <s:element minOccurs="0" maxOccurs="1" name="ZZDM6N3" type="s:string" />
+                              <s:element minOccurs="0" maxOccurs="1" name="ZZSTOL" type="s:string" />
+                              <s:element minOccurs="0" maxOccurs="1" name="ZZROLL" type="s:string" />
+                              <s:element minOccurs="0" maxOccurs="1" name="ZZMTWC" type="s:string" />
+                              <s:element minOccurs="0" maxOccurs="1" name="ZZBASE" type="s:string" />
+                              <s:element minOccurs="0" maxOccurs="1" name="ZZVN1R" type="s:string" />
+                              <s:element minOccurs="0" maxOccurs="1" name="ZZVN2R" type="s:string" />
+                              <s:element minOccurs="0" maxOccurs="1" name="ZZPKDM" type="s:string" />
+                              <s:element minOccurs="0" maxOccurs="1" name="ZZMINP" type="s:string" />
+                              <s:element minOccurs="0" maxOccurs="1" name="ZZREJTEAN" type="s:string" />
+                            </s:sequence>
+                            <s:attribute name="SEGMENT" type="s:string" />
+                          </s:complexType>
+                        </s:element>
+                        <s:element minOccurs="0" maxOccurs="1" name="E1MARA1">
+                          <s:complexType>
+                            <s:sequence>
+                              <s:element minOccurs="0" maxOccurs="1" name="MATNR_EXTERNAL" type="s:string" />
+                              <s:element minOccurs="0" maxOccurs="1" name="MATNR_VERSION" type="s:string" />
+                              <s:element minOccurs="0" maxOccurs="1" name="MATNR_GUID" type="s:string" />
+                              <s:element minOccurs="0" maxOccurs="1" name="BMATN_EXTERNAL" type="s:string" />
+                              <s:element minOccurs="0" maxOccurs="1" name="BMATN_VERSION" type="s:string" />
+                              <s:element minOccurs="0" maxOccurs="1" name="BMATN_GUID" type="s:string" />
+                              <s:element minOccurs="0" maxOccurs="1" name="STOFF_EXTERNAL" type="s:string" />
+                              <s:element minOccurs="0" maxOccurs="1" name="STOFF_VERSION" type="s:string" />
+                              <s:element minOccurs="0" maxOccurs="1" name="STOFF_GUID" type="s:string" />
+                              <s:element minOccurs="0" maxOccurs="1" name="HUTYP_DFLT" type="s:string" />
+                              <s:element minOccurs="0" maxOccurs="1" name="PILFERABLE" type="s:string" />
+                              <s:element minOccurs="0" maxOccurs="1" name="WHSTC" type="s:string" />
+                              <s:element minOccurs="0" maxOccurs="1" name="WHMATGR" type="s:string" />
+                              <s:element minOccurs="0" maxOccurs="1" name="HNDLCODE" type="s:string" />
+                              <s:element minOccurs="0" maxOccurs="1" name="HAZMAT" type="s:string" />
+                              <s:element minOccurs="0" maxOccurs="1" name="HUTYP" type="s:string" />
+                              <s:element minOccurs="0" maxOccurs="1" name="TARE_VAR" type="s:string" />
+                              <s:element minOccurs="0" maxOccurs="1" name="MAXC" type="s:string" />
+                              <s:element minOccurs="0" maxOccurs="1" name="MAXC_TOL" type="s:string" />
+                              <s:element minOccurs="0" maxOccurs="1" name="MAXL" type="s:string" />
+                              <s:element minOccurs="0" maxOccurs="1" name="MAXB" type="s:string" />
+                              <s:element minOccurs="0" maxOccurs="1" name="MAXH" type="s:string" />
+                              <s:element minOccurs="0" maxOccurs="1" name="MAXDIM_UOM" type="s:string" />
+                              <s:element minOccurs="0" maxOccurs="1" name="HERKL" type="s:string" />
+                              <s:element minOccurs="0" maxOccurs="1" name="MFRGR" type="s:string" />
+                              <s:element minOccurs="0" maxOccurs="1" name="QQTIME" type="s:string" />
+                              <s:element minOccurs="0" maxOccurs="1" name="QQTIMEUOM" type="s:string" />
+                              <s:element minOccurs="0" maxOccurs="1" name="QGRP" type="s:string" />
+                              <s:element minOccurs="0" maxOccurs="1" name="SERIAL" type="s:string" />
+                              <s:element minOccurs="0" maxOccurs="1" name="PS_SMARTFORM" type="s:string" />
+                              <s:element minOccurs="0" maxOccurs="1" name="CWQPROC" type="s:string" />
+                              <s:element minOccurs="0" maxOccurs="1" name="CWQTOLGR" type="s:string" />
+                              <s:element minOccurs="0" maxOccurs="1" name="ADPROF" type="s:string" />
+                            </s:sequence>
+                            <s:attribute name="SEGMENT" type="s:string" />
+                          </s:complexType>
+                        </s:element>
+                        <s:element minOccurs="0" maxOccurs="unbounded" name="E1MAKTM">
+                          <s:complexType>
+                            <s:sequence>
+                              <s:element minOccurs="0" maxOccurs="1" name="MSGFN" type="s:string" />
+                              <s:element minOccurs="0" maxOccurs="1" name="SPRAS" type="s:string" />
+                              <s:element minOccurs="0" maxOccurs="1" name="MAKTX" type="s:string" />
+                              <s:element minOccurs="0" maxOccurs="1" name="SPRAS_ISO" type="s:string" />
+                            </s:sequence>
+                            <s:attribute name="SEGMENT" type="s:string" />
+                          </s:complexType>
+                        </s:element>
+                        <s:element minOccurs="0" maxOccurs="unbounded" name="E1MARCM">
+                          <s:complexType>
+                            <s:sequence>
+                              <s:element minOccurs="0" maxOccurs="1" name="MSGFN" type="s:string" />
+                              <s:element minOccurs="0" maxOccurs="1" name="WERKS" type="s:string" />
+                              <s:element minOccurs="0" maxOccurs="1" name="PSTAT" type="s:string" />
+                              <s:element minOccurs="0" maxOccurs="1" name="LVORM" type="s:string" />
+                              <s:element minOccurs="0" maxOccurs="1" name="BWTTY" type="s:string" />
+                              <s:element minOccurs="0" maxOccurs="1" name="MAABC" type="s:string" />
+                              <s:element minOccurs="0" maxOccurs="1" name="KZKRI" type="s:string" />
+                              <s:element minOccurs="0" maxOccurs="1" name="EKGRP" type="s:string" />
+                              <s:element minOccurs="0" maxOccurs="1" name="AUSME" type="s:string" />
+                              <s:element minOccurs="0" maxOccurs="1" name="DISPR" type="s:string" />
+                              <s:element minOccurs="0" maxOccurs="1" name="DISMM" type="s:string" />
+                              <s:element minOccurs="0" maxOccurs="1" name="DISPO" type="s:string" />
+                              <s:element minOccurs="0" maxOccurs="1" name="PLIFZ" type="s:string" />
+                              <s:element minOccurs="0" maxOccurs="1" name="WEBAZ" type="s:string" />
+                              <s:element minOccurs="0" maxOccurs="1" name="PERKZ" type="s:string" />
+                              <s:element minOccurs="0" maxOccurs="1" name="AUSSS" type="s:string" />
+                              <s:element minOccurs="0" maxOccurs="1" name="DISLS" type="s:string" />
+                              <s:element minOccurs="0" maxOccurs="1" name="BESKZ" type="s:string" />
+                              <s:element minOccurs="0" maxOccurs="1" name="SOBSL" type="s:string" />
+                              <s:element minOccurs="0" maxOccurs="1" name="MINBE" type="s:string" />
+                              <s:element minOccurs="0" maxOccurs="1" name="EISBE" type="s:string" />
+                              <s:element minOccurs="0" maxOccurs="1" name="BSTMI" type="s:string" />
+                              <s:element minOccurs="0" maxOccurs="1" name="BSTMA" type="s:string" />
+                              <s:element minOccurs="0" maxOccurs="1" name="BSTFE" type="s:string" />
+                              <s:element minOccurs="0" maxOccurs="1" name="BSTRF" type="s:string" />
+                              <s:element minOccurs="0" maxOccurs="1" name="MABST" type="s:string" />
+                              <s:element minOccurs="0" maxOccurs="1" name="LOSFX" type="s:string" />
+                              <s:element minOccurs="0" maxOccurs="1" name="SBDKZ" type="s:string" />
+                              <s:element minOccurs="0" maxOccurs="1" name="LAGPR" type="s:string" />
+                              <s:element minOccurs="0" maxOccurs="1" name="ALTSL" type="s:string" />
+                              <s:element minOccurs="0" maxOccurs="1" name="KZAUS" type="s:string" />
+                              <s:element minOccurs="0" maxOccurs="1" name="AUSDT" type="s:string" />
+                              <s:element minOccurs="0" maxOccurs="1" name="NFMAT" type="s:string" />
+                              <s:element minOccurs="0" maxOccurs="1" name="KZBED" type="s:string" />
+                              <s:element minOccurs="0" maxOccurs="1" name="MISKZ" type="s:string" />
+                              <s:element minOccurs="0" maxOccurs="1" name="FHORI" type="s:string" />
+                              <s:element minOccurs="0" maxOccurs="1" name="PFREI" type="s:string" />
+                              <s:element minOccurs="0" maxOccurs="1" name="FFREI" type="s:string" />
+                              <s:element minOccurs="0" maxOccurs="1" name="RGEKZ" type="s:string" />
+                              <s:element minOccurs="0" maxOccurs="1" name="FEVOR" type="s:string" />
+                              <s:element minOccurs="0" maxOccurs="1" name="BEARZ" type="s:string" />
+                              <s:element minOccurs="0" maxOccurs="1" name="RUEZT" type="s:string" />
+                              <s:element minOccurs="0" maxOccurs="1" name="TRANZ" type="s:string" />
+                              <s:element minOccurs="0" maxOccurs="1" name="BASMG" type="s:string" />
+                              <s:element minOccurs="0" maxOccurs="1" name="DZEIT" type="s:string" />
+                              <s:element minOccurs="0" maxOccurs="1" name="MAXLZ" type="s:string" />
+                              <s:element minOccurs="0" maxOccurs="1" name="LZEIH" type="s:string" />
+                              <s:element minOccurs="0" maxOccurs="1" name="KZPRO" type="s:string" />
+                              <s:element minOccurs="0" maxOccurs="1" name="GPMKZ" type="s:string" />
+                              <s:element minOccurs="0" maxOccurs="1" name="UEETO" type="s:string" />
+                              <s:element minOccurs="0" maxOccurs="1" name="UEETK" type="s:string" />
+                              <s:element minOccurs="0" maxOccurs="1" name="UNETO" type="s:string" />
+                              <s:element minOccurs="0" maxOccurs="1" name="WZEIT" type="s:string" />
+                              <s:element minOccurs="0" maxOccurs="1" name="ATPKZ" type="s:string" />
+                              <s:element minOccurs="0" maxOccurs="1" name="VZUSL" type="s:string" />
+                              <s:element minOccurs="0" maxOccurs="1" name="HERBL" type="s:string" />
+                              <s:element minOccurs="0" maxOccurs="1" name="INSMK" type="s:string" />
+                              <s:element minOccurs="0" maxOccurs="1" name="SSQSS" type="s:string" />
+                              <s:element minOccurs="0" maxOccurs="1" name="KZDKZ" type="s:string" />
+                              <s:element minOccurs="0" maxOccurs="1" name="UMLMC" type="s:string" />
+                              <s:element minOccurs="0" maxOccurs="1" name="LADGR" type="s:string" />
+                              <s:element minOccurs="0" maxOccurs="1" name="XCHPF" type="s:string" />
+                              <s:element minOccurs="0" maxOccurs="1" name="USEQU" type="s:string" />
+                              <s:element minOccurs="0" maxOccurs="1" name="LGRAD" type="s:string" />
+                              <s:element minOccurs="0" maxOccurs="1" name="AUFTL" type="s:string" />
+                              <s:element minOccurs="0" maxOccurs="1" name="PLVAR" type="s:string" />
+                              <s:element minOccurs="0" maxOccurs="1" name="OTYPE" type="s:string" />
+                              <s:element minOccurs="0" maxOccurs="1" name="OBJID" type="s:string" />
+                              <s:element minOccurs="0" maxOccurs="1" name="MTVFP" type="s:string" />
+                              <s:element minOccurs="0" maxOccurs="1" name="PERIV" type="s:string" />
+                              <s:element minOccurs="0" maxOccurs="1" name="KZKFK" type="s:string" />
+                              <s:element minOccurs="0" maxOccurs="1" name="VRVEZ" type="s:string" />
+                              <s:element minOccurs="0" maxOccurs="1" name="VBAMG" type="s:string" />
+                              <s:element minOccurs="0" maxOccurs="1" name="VBEAZ" type="s:string" />
+                              <s:element minOccurs="0" maxOccurs="1" name="LIZYK" type="s:string" />
+                              <s:element minOccurs="0" maxOccurs="1" name="BWSCL" type="s:string" />
+                              <s:element minOccurs="0" maxOccurs="1" name="KAUTB" type="s:string" />
+                              <s:element minOccurs="0" maxOccurs="1" name="KORDB" type="s:string" />
+                              <s:element minOccurs="0" maxOccurs="1" name="STAWN" type="s:string" />
+                              <s:element minOccurs="0" maxOccurs="1" name="HERKL" type="s:string" />
+                              <s:element minOccurs="0" maxOccurs="1" name="HERKR" type="s:string" />
+                              <s:element minOccurs="0" maxOccurs="1" name="EXPME" type="s:string" />
+                              <s:element minOccurs="0" maxOccurs="1" name="MTVER" type="s:string" />
+                              <s:element minOccurs="0" maxOccurs="1" name="PRCTR" type="s:string" />
+                              <s:element minOccurs="0" maxOccurs="1" name="TRAME" type="s:string" />
+                              <s:element minOccurs="0" maxOccurs="1" name="MRPPP" type="s:string" />
+                              <s:element minOccurs="0" maxOccurs="1" name="SAUFT" type="s:string" />
+                              <s:element minOccurs="0" maxOccurs="1" name="FXHOR" type="s:string" />
+                              <s:element minOccurs="0" maxOccurs="1" name="VRMOD" type="s:string" />
+                              <s:element minOccurs="0" maxOccurs="1" name="VINT1" type="s:string" />
+                              <s:element minOccurs="0" maxOccurs="1" name="VINT2" type="s:string" />
+                              <s:element minOccurs="0" maxOccurs="1" name="STLAL" type="s:string" />
+                              <s:element minOccurs="0" maxOccurs="1" name="STLAN" type="s:string" />
+                              <s:element minOccurs="0" maxOccurs="1" name="PLNNR" type="s:string" />
+                              <s:element minOccurs="0" maxOccurs="1" name="APLAL" type="s:string" />
+                              <s:element minOccurs="0" maxOccurs="1" name="LOSGR" type="s:string" />
+                              <s:element minOccurs="0" maxOccurs="1" name="SOBSK" type="s:string" />
+                              <s:element minOccurs="0" maxOccurs="1" name="FRTME" type="s:string" />
+                              <s:element minOccurs="0" maxOccurs="1" name="LGPRO" type="s:string" />
+                              <s:element minOccurs="0" maxOccurs="1" name="DISGR" type="s:string" />
+                              <s:element minOccurs="0" maxOccurs="1" name="KAUSF" type="s:string" />
+                              <s:element minOccurs="0" maxOccurs="1" name="QZGTP" type="s:string" />
+                              <s:element minOccurs="0" maxOccurs="1" name="TAKZT" type="s:string" />
+                              <s:element minOccurs="0" maxOccurs="1" name="RWPRO" type="s:string" />
+                              <s:element minOccurs="0" maxOccurs="1" name="COPAM" type="s:string" />
+                              <s:element minOccurs="0" maxOccurs="1" name="ABCIN" type="s:string" />
+                              <s:element minOccurs="0" maxOccurs="1" name="AWSLS" type="s:string" />
+                              <s:element minOccurs="0" maxOccurs="1" name="SERNP" type="s:string" />
+                              <s:element minOccurs="0" maxOccurs="1" name="STDPD" type="s:string" />
+                              <s:element minOccurs="0" maxOccurs="1" name="SFEPR" type="s:string" />
+                              <s:element minOccurs="0" maxOccurs="1" name="XMCNG" type="s:string" />
+                              <s:element minOccurs="0" maxOccurs="1" name="QSSYS" type="s:string" />
+                              <s:element minOccurs="0" maxOccurs="1" name="LFRHY" type="s:string" />
+                              <s:element minOccurs="0" maxOccurs="1" name="RDPRF" type="s:string" />
+                              <s:element minOccurs="0" maxOccurs="1" name="VRBMT" type="s:string" />
+                              <s:element minOccurs="0" maxOccurs="1" name="VRBWK" type="s:string" />
+                              <s:element minOccurs="0" maxOccurs="1" name="VRBDT" type="s:string" />
+                              <s:element minOccurs="0" maxOccurs="1" name="VRBFK" type="s:string" />
+                              <s:element minOccurs="0" maxOccurs="1" name="AUTRU" type="s:string" />
+                              <s:element minOccurs="0" maxOccurs="1" name="PREFE" type="s:string" />
+                              <s:element minOccurs="0" maxOccurs="1" name="PRENC" type="s:string" />
+                              <s:element minOccurs="0" maxOccurs="1" name="PRENO" type="s:string" />
+                              <s:element minOccurs="0" maxOccurs="1" name="PREND" type="s:string" />
+                              <s:element minOccurs="0" maxOccurs="1" name="PRENE" type="s:string" />
+                              <s:element minOccurs="0" maxOccurs="1" name="PRENG" type="s:string" />
+                              <s:element minOccurs="0" maxOccurs="1" name="ITARK" type="s:string" />
+                              <s:element minOccurs="0" maxOccurs="1" name="PRFRQ" type="s:string" />
+                              <s:element minOccurs="0" maxOccurs="1" name="KZKUP" type="s:string" />
+                              <s:element minOccurs="0" maxOccurs="1" name="STRGR" type="s:string" />
+                              <s:element minOccurs="0" maxOccurs="1" name="LGFSB" type="s:string" />
+                              <s:element minOccurs="0" maxOccurs="1" name="SCHGT" type="s:string" />
+                              <s:element minOccurs="0" maxOccurs="1" name="CCFIX" type="s:string" />
+                              <s:element minOccurs="0" maxOccurs="1" name="EPRIO" type="s:string" />
+                              <s:element minOccurs="0" maxOccurs="1" name="QMATA" type="s:string" />
+                              <s:element minOccurs="0" maxOccurs="1" name="PLNTY" type="s:string" />
+                              <s:element minOccurs="0" maxOccurs="1" name="MMSTA" type="s:string" />
+                              <s:element minOccurs="0" maxOccurs="1" name="SFCPF" type="s:string" />
+                              <s:element minOccurs="0" maxOccurs="1" name="SHFLG" type="s:string" />
+                              <s:element minOccurs="0" maxOccurs="1" name="SHZET" type="s:string" />
+                              <s:element minOccurs="0" maxOccurs="1" name="MDACH" type="s:string" />
+                              <s:element minOccurs="0" maxOccurs="1" name="KZECH" type="s:string" />
+                              <s:element minOccurs="0" maxOccurs="1" name="MMSTD" type="s:string" />
+                              <s:element minOccurs="0" maxOccurs="1" name="MFRGR" type="s:string" />
+                              <s:element minOccurs="0" maxOccurs="1" name="FVIDK" type="s:string" />
+                              <s:element minOccurs="0" maxOccurs="1" name="INDUS" type="s:string" />
+                              <s:element minOccurs="0" maxOccurs="1" name="MOWNR" type="s:string" />
+                              <s:element minOccurs="0" maxOccurs="1" name="MOGRU" type="s:string" />
+                              <s:element minOccurs="0" maxOccurs="1" name="CASNR" type="s:string" />
+                              <s:element minOccurs="0" maxOccurs="1" name="GPNUM" type="s:string" />
+                              <s:element minOccurs="0" maxOccurs="1" name="STEUC" type="s:string" />
+                              <s:element minOccurs="0" maxOccurs="1" name="FABKZ" type="s:string" />
+                              <s:element minOccurs="0" maxOccurs="1" name="MATGR" type="s:string" />
+                              <s:element minOccurs="0" maxOccurs="1" name="LOGGR" type="s:string" />
+                              <s:element minOccurs="0" maxOccurs="1" name="VSPVB" type="s:string" />
+                              <s:element minOccurs="0" maxOccurs="1" name="DPLFS" type="s:string" />
+                              <s:element minOccurs="0" maxOccurs="1" name="DPLPU" type="s:string" />
+                              <s:element minOccurs="0" maxOccurs="1" name="DPLHO" type="s:string" />
+                              <s:element minOccurs="0" maxOccurs="1" name="MINLS" type="s:string" />
+                              <s:element minOccurs="0" maxOccurs="1" name="MAXLS" type="s:string" />
+                              <s:element minOccurs="0" maxOccurs="1" name="FIXLS" type="s:string" />
+                              <s:element minOccurs="0" maxOccurs="1" name="LTINC" type="s:string" />
+                              <s:element minOccurs="0" maxOccurs="1" name="COMPL" type="s:string" />
+                              <s:element minOccurs="0" maxOccurs="1" name="CONVT" type="s:string" />
+                              <s:element minOccurs="0" maxOccurs="1" name="FPRFM" type="s:string" />
+                              <s:element minOccurs="0" maxOccurs="1" name="SHPRO" type="s:string" />
+                              <s:element minOccurs="0" maxOccurs="1" name="FXPRU" type="s:string" />
+                              <s:element minOccurs="0" maxOccurs="1" name="KZPSP" type="s:string" />
+                              <s:element minOccurs="0" maxOccurs="1" name="OCMPF" type="s:string" />
+                              <s:element minOccurs="0" maxOccurs="1" name="APOKZ" type="s:string" />
+                              <s:element minOccurs="0" maxOccurs="1" name="AHDIS" type="s:string" />
+                              <s:element minOccurs="0" maxOccurs="1" name="EISLO" type="s:string" />
+                              <s:element minOccurs="0" maxOccurs="1" name="NCOST" type="s:string" />
+                              <s:element minOccurs="0" maxOccurs="1" name="MEGRU" type="s:string" />
+                              <s:element minOccurs="0" maxOccurs="1" name="ROTATION_DATE" type="s:string" />
+                              <s:element minOccurs="0" maxOccurs="1" name="UCHKZ" type="s:string" />
+                              <s:element minOccurs="0" maxOccurs="1" name="UCMAT" type="s:string" />
+                              <s:element minOccurs="0" maxOccurs="1" name="IUID_RELEVANT" type="s:string" />
+                              <s:element minOccurs="0" maxOccurs="1" name="IUID_TYPE" type="s:string" />
+                              <s:element minOccurs="0" maxOccurs="1" name="UID_IEA" type="s:string" />
+                              <s:element minOccurs="0" maxOccurs="unbounded" name="Z1MARCM" type="s0:ZMATMAS5.Z1MARCM" />
+                              <s:element minOccurs="0" maxOccurs="1" name="E1MARC1">
+                                <s:complexType>
+                                  <s:sequence>
+                                    <s:element minOccurs="0" maxOccurs="1" name="NFMAT_EXTERNAL" type="s:string" />
+                                    <s:element minOccurs="0" maxOccurs="1" name="NFMAT_VERSION" type="s:string" />
+                                    <s:element minOccurs="0" maxOccurs="1" name="NFMAT_GUID" type="s:string" />
+                                    <s:element minOccurs="0" maxOccurs="1" name="STDPD_EXTERNAL" type="s:string" />
+                                    <s:element minOccurs="0" maxOccurs="1" name="STDPD_VERSION" type="s:string" />
+                                    <s:element minOccurs="0" maxOccurs="1" name="STDPD_GUID" type="s:string" />
+                                    <s:element minOccurs="0" maxOccurs="1" name="VRBMT_EXTERNAL" type="s:string" />
+                                    <s:element minOccurs="0" maxOccurs="1" name="VRBMT_VERSION" type="s:string" />
+                                    <s:element minOccurs="0" maxOccurs="1" name="VRBMT_GUID" type="s:string" />
+                                  </s:sequence>
+                                  <s:attribute name="SEGMENT" type="s:string" />
+                                </s:complexType>
+                              </s:element>
+                              <s:element minOccurs="0" maxOccurs="unbounded" name="E1MARDM">
+                                <s:complexType>
+                                  <s:sequence>
+                                    <s:element minOccurs="0" maxOccurs="1" name="MSGFN" type="s:string" />
+                                    <s:element minOccurs="0" maxOccurs="1" name="LGORT" type="s:string" />
+                                    <s:element minOccurs="0" maxOccurs="1" name="PSTAT" type="s:string" />
+                                    <s:element minOccurs="0" maxOccurs="1" name="LVORM" type="s:string" />
+                                    <s:element minOccurs="0" maxOccurs="1" name="DISKZ" type="s:string" />
+                                    <s:element minOccurs="0" maxOccurs="1" name="LSOBS" type="s:string" />
+                                    <s:element minOccurs="0" maxOccurs="1" name="LMINB" type="s:string" />
+                                    <s:element minOccurs="0" maxOccurs="1" name="LBSTF" type="s:string" />
+                                    <s:element minOccurs="0" maxOccurs="1" name="HERKL" type="s:string" />
+                                    <s:element minOccurs="0" maxOccurs="1" name="EXPPG" type="s:string" />
+                                    <s:element minOccurs="0" maxOccurs="1" name="EXVER" type="s:string" />
+                                    <s:element minOccurs="0" maxOccurs="1" name="LGPBE" type="s:string" />
+                                    <s:element minOccurs="0" maxOccurs="1" name="PRCTL" type="s:string" />
+                                    <s:element minOccurs="0" maxOccurs="1" name="LWMKB" type="s:string" />
+                                    <s:element minOccurs="0" maxOccurs="1" name="BSKRF" type="s:string" />
+                                  </s:sequence>
+                                  <s:attribute name="SEGMENT" type="s:string" />
+                                </s:complexType>
+                              </s:element>
+                              <s:element minOccurs="0" maxOccurs="1" name="E1MFHMM">
+                                <s:complexType>
+                                  <s:sequence>
+                                    <s:element minOccurs="0" maxOccurs="1" name="MSGFN" type="s:string" />
+                                    <s:element minOccurs="0" maxOccurs="1" name="OBJTY" type="s:string" />
+                                    <s:element minOccurs="0" maxOccurs="1" name="OBJID" type="s:string" />
+                                    <s:element minOccurs="0" maxOccurs="1" name="ZAEHL" type="s:string" />
+                                    <s:element minOccurs="0" maxOccurs="1" name="OBJTY_V" type="s:string" />
+                                    <s:element minOccurs="0" maxOccurs="1" name="OBJID_V" type="s:string" />
+                                    <s:element minOccurs="0" maxOccurs="1" name="KZKBL" type="s:string" />
+                                    <s:element minOccurs="0" maxOccurs="1" name="STEUF" type="s:string" />
+                                    <s:element minOccurs="0" maxOccurs="1" name="STEUF_REF" type="s:string" />
+                                    <s:element minOccurs="0" maxOccurs="1" name="FGRU1" type="s:string" />
+                                    <s:element minOccurs="0" maxOccurs="1" name="FGRU2" type="s:string" />
+                                    <s:element minOccurs="0" maxOccurs="1" name="PLANV" type="s:string" />
+                                    <s:element minOccurs="0" maxOccurs="1" name="KTSCH" type="s:string" />
+                                    <s:element minOccurs="0" maxOccurs="1" name="KTSCH_REF" type="s:string" />
+                                    <s:element minOccurs="0" maxOccurs="1" name="BZOFFB" type="s:string" />
+                                    <s:element minOccurs="0" maxOccurs="1" name="BZOFFB_REF" type="s:string" />
+                                    <s:element minOccurs="0" maxOccurs="1" name="OFFSTB" type="s:string" />
+                                    <s:element minOccurs="0" maxOccurs="1" name="EHOFFB" type="s:string" />
+                                    <s:element minOccurs="0" maxOccurs="1" name="OFFSTB_REF" type="s:string" />
+                                    <s:element minOccurs="0" maxOccurs="1" name="BZOFFE" type="s:string" />
+                                    <s:element minOccurs="0" maxOccurs="1" name="BZOFFE_REF" type="s:string" />
+                                    <s:element minOccurs="0" maxOccurs="1" name="OFFSTE" type="s:string" />
+                                    <s:element minOccurs="0" maxOccurs="1" name="EHOFFE" type="s:string" />
+                                    <s:element minOccurs="0" maxOccurs="1" name="OFFSTE_REF" type="s:string" />
+                                    <s:element minOccurs="0" maxOccurs="1" name="MGFORM" type="s:string" />
+                                    <s:element minOccurs="0" maxOccurs="1" name="MGFORM_REF" type="s:string" />
+                                    <s:element minOccurs="0" maxOccurs="1" name="EWFORM" type="s:string" />
+                                    <s:element minOccurs="0" maxOccurs="1" name="EWFORM_REF" type="s:string" />
+                                    <s:element minOccurs="0" maxOccurs="1" name="PAR01" type="s:string" />
+                                    <s:element minOccurs="0" maxOccurs="1" name="PAR02" type="s:string" />
+                                    <s:element minOccurs="0" maxOccurs="1" name="PAR03" type="s:string" />
+                                    <s:element minOccurs="0" maxOccurs="1" name="PAR04" type="s:string" />
+                                    <s:element minOccurs="0" maxOccurs="1" name="PAR05" type="s:string" />
+                                    <s:element minOccurs="0" maxOccurs="1" name="PAR06" type="s:string" />
+                                    <s:element minOccurs="0" maxOccurs="1" name="PARU1" type="s:string" />
+                                    <s:element minOccurs="0" maxOccurs="1" name="PARU2" type="s:string" />
+                                    <s:element minOccurs="0" maxOccurs="1" name="PARU3" type="s:string" />
+                                    <s:element minOccurs="0" maxOccurs="1" name="PARU4" type="s:string" />
+                                    <s:element minOccurs="0" maxOccurs="1" name="PARU5" type="s:string" />
+                                    <s:element minOccurs="0" maxOccurs="1" name="PARU6" type="s:string" />
+                                    <s:element minOccurs="0" maxOccurs="1" name="PARV1" type="s:string" />
+                                    <s:element minOccurs="0" maxOccurs="1" name="PARV2" type="s:string" />
+                                    <s:element minOccurs="0" maxOccurs="1" name="PARV3" type="s:string" />
+                                    <s:element minOccurs="0" maxOccurs="1" name="PARV4" type="s:string" />
+                                    <s:element minOccurs="0" maxOccurs="1" name="PARV5" type="s:string" />
+                                    <s:element minOccurs="0" maxOccurs="1" name="PARV6" type="s:string" />
+                                  </s:sequence>
+                                  <s:attribute name="SEGMENT" type="s:string" />
+                                </s:complexType>
+                              </s:element>
+                              <s:element minOccurs="0" maxOccurs="1" name="E1MPGDM">
+                                <s:complexType>
+                                  <s:sequence>
+                                    <s:element minOccurs="0" maxOccurs="1" name="MSGFN" type="s:string" />
+                                    <s:element minOccurs="0" maxOccurs="1" name="PRGRP" type="s:string" />
+                                    <s:element minOccurs="0" maxOccurs="1" name="PRWRK" type="s:string" />
+                                    <s:element minOccurs="0" maxOccurs="1" name="UMREF" type="s:string" />
+                                    <s:element minOccurs="0" maxOccurs="1" name="PRGRP_EXTERNAL" type="s:string" />
+                                    <s:element minOccurs="0" maxOccurs="1" name="PRGRP_VERSION" type="s:string" />
+                                    <s:element minOccurs="0" maxOccurs="1" name="PRGRP_GUID" type="s:string" />
+                                  </s:sequence>
+                                  <s:attribute name="SEGMENT" type="s:string" />
+                                </s:complexType>
+                              </s:element>
+                              <s:element minOccurs="0" maxOccurs="1" name="E1MPOPM">
+                                <s:complexType>
+                                  <s:sequence>
+                                    <s:element minOccurs="0" maxOccurs="1" name="MSGFN" type="s:string" />
+                                    <s:element minOccurs="0" maxOccurs="1" name="VERSP" type="s:string" />
+                                    <s:element minOccurs="0" maxOccurs="1" name="PROPR" type="s:string" />
+                                    <s:element minOccurs="0" maxOccurs="1" name="MODAW" type="s:string" />
+                                    <s:element minOccurs="0" maxOccurs="1" name="MODAV" type="s:string" />
+                                    <s:element minOccurs="0" maxOccurs="1" name="KZPAR" type="s:string" />
+                                    <s:element minOccurs="0" maxOccurs="1" name="OPGRA" type="s:string" />
+                                    <s:element minOccurs="0" maxOccurs="1" name="KZINI" type="s:string" />
+                                    <s:element minOccurs="0" maxOccurs="1" name="PRMOD" type="s:string" />
+                                    <s:element minOccurs="0" maxOccurs="1" name="ALPHA" type="s:string" />
+                                    <s:element minOccurs="0" maxOccurs="1" name="BETA1" type="s:string" />
+                                    <s:element minOccurs="0" maxOccurs="1" name="GAMMA" type="s:string" />
+                                    <s:element minOccurs="0" maxOccurs="1" name="DELTA" type="s:string" />
+                                    <s:element minOccurs="0" maxOccurs="1" name="EPSIL" type="s:string" />
+                                    <s:element minOccurs="0" maxOccurs="1" name="SIGGR" type="s:string" />
+                                    <s:element minOccurs="0" maxOccurs="1" name="PERKZ" type="s:string" />
+                                    <s:element minOccurs="0" maxOccurs="1" name="PRDAT" type="s:string" />
+                                    <s:element minOccurs="0" maxOccurs="1" name="PERAN" type="s:string" />
+                                    <s:element minOccurs="0" maxOccurs="1" name="PERIN" type="s:string" />
+                                    <s:element minOccurs="0" maxOccurs="1" name="PERIO" type="s:string" />
+                                    <s:element minOccurs="0" maxOccurs="1" name="PEREX" type="s:string" />
+                                    <s:element minOccurs="0" maxOccurs="1" name="ANZPR" type="s:string" />
+                                    <s:element minOccurs="0" maxOccurs="1" name="FIMON" type="s:string" />
+                                    <s:element minOccurs="0" maxOccurs="1" name="GWERT" type="s:string" />
+                                    <s:element minOccurs="0" maxOccurs="1" name="GWER1" type="s:string" />
+                                    <s:element minOccurs="0" maxOccurs="1" name="GWER2" type="s:string" />
+                                    <s:element minOccurs="0" maxOccurs="1" name="VMGWE" type="s:string" />
+                                    <s:element minOccurs="0" maxOccurs="1" name="VMGW1" type="s:string" />
+                                    <s:element minOccurs="0" maxOccurs="1" name="VMGW2" type="s:string" />
+                                    <s:element minOccurs="0" maxOccurs="1" name="TWERT" type="s:string" />
+                                    <s:element minOccurs="0" maxOccurs="1" name="VMTWE" type="s:string" />
+                                    <s:element minOccurs="0" maxOccurs="1" name="PRMAD" type="s:string" />
+                                    <s:element minOccurs="0" maxOccurs="1" name="VMMAD" type="s:string" />
+                                    <s:element minOccurs="0" maxOccurs="1" name="FSUMM" type="s:string" />
+                                    <s:element minOccurs="0" maxOccurs="1" name="VMFSU" type="s:string" />
+                                    <s:element minOccurs="0" maxOccurs="1" name="GEWGR" type="s:string" />
+                                    <s:element minOccurs="0" maxOccurs="1" name="THKOF" type="s:string" />
+                                    <s:element minOccurs="0" maxOccurs="1" name="AUSNA" type="s:string" />
+                                    <s:element minOccurs="0" maxOccurs="1" name="PROAB" type="s:string" />
+                                  </s:sequence>
+                                  <s:attribute name="SEGMENT" type="s:string" />
+                                </s:complexType>
+                              </s:element>
+                              <s:element minOccurs="0" maxOccurs="unbounded" name="E1MPRWM">
+                                <s:complexType>
+                                  <s:sequence>
+                                    <s:element minOccurs="0" maxOccurs="1" name="MSGFN" type="s:string" />
+                                    <s:element minOccurs="0" maxOccurs="1" name="ERTAG" type="s:string" />
+                                    <s:element minOccurs="0" maxOccurs="1" name="PRWRT" type="s:string" />
+                                    <s:element minOccurs="0" maxOccurs="1" name="KOPRW" type="s:string" />
+                                    <s:element minOccurs="0" maxOccurs="1" name="SAIIN" type="s:string" />
+                                    <s:element minOccurs="0" maxOccurs="1" name="FIXKZ" type="s:string" />
+                                    <s:element minOccurs="0" maxOccurs="1" name="EXPRW" type="s:string" />
+                                    <s:element minOccurs="0" maxOccurs="1" name="ANTEI" type="s:string" />
+                                  </s:sequence>
+                                  <s:attribute name="SEGMENT" type="s:string" />
+                                </s:complexType>
+                              </s:element>
+                              <s:element minOccurs="0" maxOccurs="unbounded" name="E1MVEGM">
+                                <s:complexType>
+                                  <s:sequence>
+                                    <s:element minOccurs="0" maxOccurs="1" name="MSGFN" type="s:string" />
+                                    <s:element minOccurs="0" maxOccurs="1" name="ERTAG" type="s:string" />
+                                    <s:element minOccurs="0" maxOccurs="1" name="VBWRT" type="s:string" />
+                                    <s:element minOccurs="0" maxOccurs="1" name="KOVBW" type="s:string" />
+                                    <s:element minOccurs="0" maxOccurs="1" name="KZEXI" type="s:string" />
+                                    <s:element minOccurs="0" maxOccurs="1" name="ANTEI" type="s:string" />
+                                  </s:sequence>
+                                  <s:attribute name="SEGMENT" type="s:string" />
+                                </s:complexType>
+                              </s:element>
+                              <s:element minOccurs="0" maxOccurs="unbounded" name="E1MVEUM">
+                                <s:complexType>
+                                  <s:sequence>
+                                    <s:element minOccurs="0" maxOccurs="1" name="MSGFN" type="s:string" />
+                                    <s:element minOccurs="0" maxOccurs="1" name="ERTAG" type="s:string" />
+                                    <s:element minOccurs="0" maxOccurs="1" name="VBWRT" type="s:string" />
+                                    <s:element minOccurs="0" maxOccurs="1" name="KOVBW" type="s:string" />
+                                    <s:element minOccurs="0" maxOccurs="1" name="KZEXI" type="s:string" />
+                                    <s:element minOccurs="0" maxOccurs="1" name="ANTEI" type="s:string" />
+                                  </s:sequence>
+                                  <s:attribute name="SEGMENT" type="s:string" />
+                                </s:complexType>
+                              </s:element>
+                              <s:element minOccurs="0" maxOccurs="unbounded" name="E1MKALM">
+                                <s:complexType>
+                                  <s:sequence>
+                                    <s:element minOccurs="0" maxOccurs="1" name="MSGFN" type="s:string" />
+                                    <s:element minOccurs="0" maxOccurs="1" name="VERID" type="s:string" />
+                                    <s:element minOccurs="0" maxOccurs="1" name="BDATU" type="s:string" />
+                                    <s:element minOccurs="0" maxOccurs="1" name="ADATU" type="s:string" />
+                                    <s:element minOccurs="0" maxOccurs="1" name="STLAL" type="s:string" />
+                                    <s:element minOccurs="0" maxOccurs="1" name="STLAN" type="s:string" />
+                                    <s:element minOccurs="0" maxOccurs="1" name="PLNTY" type="s:string" />
+                                    <s:element minOccurs="0" maxOccurs="1" name="PLNNR" type="s:string" />
+                                    <s:element minOccurs="0" maxOccurs="1" name="ALNAL" type="s:string" />
+                                    <s:element minOccurs="0" maxOccurs="1" name="BESKZ" type="s:string" />
+                                    <s:element minOccurs="0" maxOccurs="1" name="SOBSL" type="s:string" />
+                                    <s:element minOccurs="0" maxOccurs="1" name="LOSGR" type="s:string" />
+                                    <s:element minOccurs="0" maxOccurs="1" name="MDV01" type="s:string" />
+                                    <s:element minOccurs="0" maxOccurs="1" name="MDV02" type="s:string" />
+                                    <s:element minOccurs="0" maxOccurs="1" name="TEXT1" type="s:string" />
+                                    <s:element minOccurs="0" maxOccurs="1" name="EWAHR" type="s:string" />
+                                    <s:element minOccurs="0" maxOccurs="1" name="VERTO" type="s:string" />
+                                    <s:element minOccurs="0" maxOccurs="1" name="SERKZ" type="s:string" />
+                                    <s:element minOccurs="0" maxOccurs="1" name="BSTMI" type="s:string" />
+                                    <s:element minOccurs="0" maxOccurs="1" name="BSTMA" type="s:string" />
+                                    <s:element minOccurs="0" maxOccurs="1" name="RGEKZ" type="s:string" />
+                                    <s:element minOccurs="0" maxOccurs="1" name="ALORT" type="s:string" />
+                                    <s:element minOccurs="0" maxOccurs="1" name="PLTYG" type="s:string" />
+                                    <s:element minOccurs="0" maxOccurs="1" name="PLNNG" type="s:string" />
+                                    <s:element minOccurs="0" maxOccurs="1" name="ALNAG" type="s:string" />
+                                    <s:element minOccurs="0" maxOccurs="1" name="PLTYM" type="s:string" />
+                                    <s:element minOccurs="0" maxOccurs="1" name="PLNNM" type="s:string" />
+                                    <s:element minOccurs="0" maxOccurs="1" name="ALNAM" type="s:string" />
+                                    <s:element minOccurs="0" maxOccurs="1" name="CSPLT" type="s:string" />
+                                    <s:element minOccurs="0" maxOccurs="1" name="MATKO" type="s:string" />
+                                    <s:element minOccurs="0" maxOccurs="1" name="ELPRO" type="s:string" />
+                                    <s:element minOccurs="0" maxOccurs="1" name="PRVBE" type="s:string" />
+                                    <s:element minOccurs="0" maxOccurs="1" name="MATKO_EXTERNAL" type="s:string" />
+                                    <s:element minOccurs="0" maxOccurs="1" name="MATKO_VERSION" type="s:string" />
+                                    <s:element minOccurs="0" maxOccurs="1" name="MATKO_GUID" type="s:string" />
+                                  </s:sequence>
+                                  <s:attribute name="SEGMENT" type="s:string" />
+                                </s:complexType>
+                              </s:element>
+                            </s:sequence>
+                            <s:attribute name="SEGMENT" type="s:string" />
+                          </s:complexType>
+                        </s:element>
+                        <s:element minOccurs="0" maxOccurs="unbounded" name="E1MARMM">
+                          <s:complexType>
+                            <s:sequence>
+                              <s:element minOccurs="0" maxOccurs="1" name="MSGFN" type="s:string" />
+                              <s:element minOccurs="0" maxOccurs="1" name="MEINH" type="s:string" />
+                              <s:element minOccurs="0" maxOccurs="1" name="UMREZ" type="s:string" />
+                              <s:element minOccurs="0" maxOccurs="1" name="UMREN" type="s:string" />
+                              <s:element minOccurs="0" maxOccurs="1" name="EAN11" type="s:string" />
+                              <s:element minOccurs="0" maxOccurs="1" name="NUMTP" type="s:string" />
+                              <s:element minOccurs="0" maxOccurs="1" name="LAENG" type="s:string" />
+                              <s:element minOccurs="0" maxOccurs="1" name="BREIT" type="s:string" />
+                              <s:element minOccurs="0" maxOccurs="1" name="HOEHE" type="s:string" />
+                              <s:element minOccurs="0" maxOccurs="1" name="MEABM" type="s:string" />
+                              <s:element minOccurs="0" maxOccurs="1" name="VOLUM" type="s:string" />
+                              <s:element minOccurs="0" maxOccurs="1" name="VOLEH" type="s:string" />
+                              <s:element minOccurs="0" maxOccurs="1" name="BRGEW" type="s:string" />
+                              <s:element minOccurs="0" maxOccurs="1" name="GEWEI" type="s:string" />
+                              <s:element minOccurs="0" maxOccurs="1" name="MESUB" type="s:string" />
+                              <s:element minOccurs="0" maxOccurs="1" name="GTIN_VARIANT" type="s:string" />
+                              <s:element minOccurs="0" maxOccurs="1" name="_-CWM_-TY2TQ" type="s:string" />
+                              <s:element minOccurs="0" maxOccurs="1" name="NEST_FTR" type="s:string" />
+                              <s:element minOccurs="0" maxOccurs="1" name="MAX_STACK" type="s:string" />
+                              <s:element minOccurs="0" maxOccurs="1" name="CAPAUSE" type="s:string" />
+                              <s:element minOccurs="0" maxOccurs="unbounded" name="E1MEANM">
+                                <s:complexType>
+                                  <s:sequence>
+                                    <s:element minOccurs="0" maxOccurs="1" name="MSGFN" type="s:string" />
+                                    <s:element minOccurs="0" maxOccurs="1" name="MEINH" type="s:string" />
+                                    <s:element minOccurs="0" maxOccurs="1" name="LFNUM" type="s:string" />
+                                    <s:element minOccurs="0" maxOccurs="1" name="EAN11" type="s:string" />
+                                    <s:element minOccurs="0" maxOccurs="1" name="EANTP" type="s:string" />
+                                    <s:element minOccurs="0" maxOccurs="1" name="HPEAN" type="s:string" />
+                                  </s:sequence>
+                                  <s:attribute name="SEGMENT" type="s:string" />
+                                </s:complexType>
+                              </s:element>
+                            </s:sequence>
+                            <s:attribute name="SEGMENT" type="s:string" />
+                          </s:complexType>
+                        </s:element>
+                        <s:element minOccurs="0" maxOccurs="unbounded" name="E1MBEWM">
+                          <s:complexType>
+                            <s:sequence>
+                              <s:element minOccurs="0" maxOccurs="1" name="MSGFN" type="s:string" />
+                              <s:element minOccurs="0" maxOccurs="1" name="BWKEY" type="s:string" />
+                              <s:element minOccurs="0" maxOccurs="1" name="BWTAR" type="s:string" />
+                              <s:element minOccurs="0" maxOccurs="1" name="LVORM" type="s:string" />
+                              <s:element minOccurs="0" maxOccurs="1" name="VPRSV" type="s:string" />
+                              <s:element minOccurs="0" maxOccurs="1" name="VERPR" type="s:string" />
+                              <s:element minOccurs="0" maxOccurs="1" name="STPRS" type="s:string" />
+                              <s:element minOccurs="0" maxOccurs="1" name="PEINH" type="s:string" />
+                              <s:element minOccurs="0" maxOccurs="1" name="BKLAS" type="s:string" />
+                              <s:element minOccurs="0" maxOccurs="1" name="VMVPR" type="s:string" />
+                              <s:element minOccurs="0" maxOccurs="1" name="VMVER" type="s:string" />
+                              <s:element minOccurs="0" maxOccurs="1" name="VMSTP" type="s:string" />
+                              <s:element minOccurs="0" maxOccurs="1" name="VMPEI" type="s:string" />
+                              <s:element minOccurs="0" maxOccurs="1" name="VMBKL" type="s:string" />
+                              <s:element minOccurs="0" maxOccurs="1" name="VJVPR" type="s:string" />
+                              <s:element minOccurs="0" maxOccurs="1" name="VJVER" type="s:string" />
+                              <s:element minOccurs="0" maxOccurs="1" name="VJSTP" type="s:string" />
+                              <s:element minOccurs="0" maxOccurs="1" name="LFGJA" type="s:string" />
+                              <s:element minOccurs="0" maxOccurs="1" name="LFMON" type="s:string" />
+                              <s:element minOccurs="0" maxOccurs="1" name="BWTTY" type="s:string" />
+                              <s:element minOccurs="0" maxOccurs="1" name="ZKPRS" type="s:string" />
+                              <s:element minOccurs="0" maxOccurs="1" name="ZKDAT" type="s:string" />
+                              <s:element minOccurs="0" maxOccurs="1" name="BWPRS" type="s:string" />
+                              <s:element minOccurs="0" maxOccurs="1" name="BWPRH" type="s:string" />
+                              <s:element minOccurs="0" maxOccurs="1" name="VJBWS" type="s:string" />
+                              <s:element minOccurs="0" maxOccurs="1" name="VJBWH" type="s:string" />
+                              <s:element minOccurs="0" maxOccurs="1" name="VVJLB" type="s:string" />
+                              <s:element minOccurs="0" maxOccurs="1" name="VVMLB" type="s:string" />
+                              <s:element minOccurs="0" maxOccurs="1" name="VVSAL" type="s:string" />
+                              <s:element minOccurs="0" maxOccurs="1" name="ZPLPR" type="s:string" />
+                              <s:element minOccurs="0" maxOccurs="1" name="ZPLP1" type="s:string" />
+                              <s:element minOccurs="0" maxOccurs="1" name="ZPLP2" type="s:string" />
+                              <s:element minOccurs="0" maxOccurs="1" name="ZPLP3" type="s:string" />
+                              <s:element minOccurs="0" maxOccurs="1" name="ZPLD1" type="s:string" />
+                              <s:element minOccurs="0" maxOccurs="1" name="ZPLD2" type="s:string" />
+                              <s:element minOccurs="0" maxOccurs="1" name="ZPLD3" type="s:string" />
+                              <s:element minOccurs="0" maxOccurs="1" name="KALKZ" type="s:string" />
+                              <s:element minOccurs="0" maxOccurs="1" name="KALKL" type="s:string" />
+                              <s:element minOccurs="0" maxOccurs="1" name="XLIFO" type="s:string" />
+                              <s:element minOccurs="0" maxOccurs="1" name="MYPOL" type="s:string" />
+                              <s:element minOccurs="0" maxOccurs="1" name="BWPH1" type="s:string" />
+                              <s:element minOccurs="0" maxOccurs="1" name="BWPS1" type="s:string" />
+                              <s:element minOccurs="0" maxOccurs="1" name="ABWKZ" type="s:string" />
+                              <s:element minOccurs="0" maxOccurs="1" name="PSTAT" type="s:string" />
+                              <s:element minOccurs="0" maxOccurs="1" name="KALN1" type="s:string" />
+                              <s:element minOccurs="0" maxOccurs="1" name="KALNR" type="s:string" />
+                              <s:element minOccurs="0" maxOccurs="1" name="BWVA1" type="s:string" />
+                              <s:element minOccurs="0" maxOccurs="1" name="BWVA2" type="s:string" />
+                              <s:element minOccurs="0" maxOccurs="1" name="BWVA3" type="s:string" />
+                              <s:element minOccurs="0" maxOccurs="1" name="VERS1" type="s:string" />
+                              <s:element minOccurs="0" maxOccurs="1" name="VERS2" type="s:string" />
+                              <s:element minOccurs="0" maxOccurs="1" name="VERS3" type="s:string" />
+                              <s:element minOccurs="0" maxOccurs="1" name="HRKFT" type="s:string" />
+                              <s:element minOccurs="0" maxOccurs="1" name="KOSGR" type="s:string" />
+                              <s:element minOccurs="0" maxOccurs="1" name="PPRDZ" type="s:string" />
+                              <s:element minOccurs="0" maxOccurs="1" name="PPRDL" type="s:string" />
+                              <s:element minOccurs="0" maxOccurs="1" name="PPRDV" type="s:string" />
+                              <s:element minOccurs="0" maxOccurs="1" name="PDATZ" type="s:string" />
+                              <s:element minOccurs="0" maxOccurs="1" name="PDATL" type="s:string" />
+                              <s:element minOccurs="0" maxOccurs="1" name="PDATV" type="s:string" />
+                              <s:element minOccurs="0" maxOccurs="1" name="EKALR" type="s:string" />
+                              <s:element minOccurs="0" maxOccurs="1" name="VPLPR" type="s:string" />
+                              <s:element minOccurs="0" maxOccurs="1" name="MLMAA" type="s:string" />
+                              <s:element minOccurs="0" maxOccurs="1" name="MLAST" type="s:string" />
+                              <s:element minOccurs="0" maxOccurs="1" name="VJBKL" type="s:string" />
+                              <s:element minOccurs="0" maxOccurs="1" name="VJPEI" type="s:string" />
+                              <s:element minOccurs="0" maxOccurs="1" name="HKMAT" type="s:string" />
+                              <s:element minOccurs="0" maxOccurs="1" name="EKLAS" type="s:string" />
+                              <s:element minOccurs="0" maxOccurs="1" name="QKLAS" type="s:string" />
+                              <s:element minOccurs="0" maxOccurs="1" name="MTUSE" type="s:string" />
+                              <s:element minOccurs="0" maxOccurs="1" name="MTORG" type="s:string" />
+                              <s:element minOccurs="0" maxOccurs="1" name="OWNPR" type="s:string" />
+                              <s:element minOccurs="0" maxOccurs="1" name="BWPEI" type="s:string" />
+                              <s:element minOccurs="0" maxOccurs="1" name="CON_FIN_VALLEVEL" type="s:string" />
+                              <s:element minOccurs="0" maxOccurs="1" name="CON_FIN_VALPROC" type="s:string" />
+                            </s:sequence>
+                            <s:attribute name="SEGMENT" type="s:string" />
+                          </s:complexType>
+                        </s:element>
+                        <s:element minOccurs="0" maxOccurs="unbounded" name="E1MLGNM">
+                          <s:complexType>
+                            <s:sequence>
+                              <s:element minOccurs="0" maxOccurs="1" name="MSGFN" type="s:string" />
+                              <s:element minOccurs="0" maxOccurs="1" name="LGNUM" type="s:string" />
+                              <s:element minOccurs="0" maxOccurs="1" name="LVORM" type="s:string" />
+                              <s:element minOccurs="0" maxOccurs="1" name="LGBKZ" type="s:string" />
+                              <s:element minOccurs="0" maxOccurs="1" name="LTKZE" type="s:string" />
+                              <s:element minOccurs="0" maxOccurs="1" name="LTKZA" type="s:string" />
+                              <s:element minOccurs="0" maxOccurs="1" name="LHMG1" type="s:string" />
+                              <s:element minOccurs="0" maxOccurs="1" name="LHMG2" type="s:string" />
+                              <s:element minOccurs="0" maxOccurs="1" name="LHMG3" type="s:string" />
+                              <s:element minOccurs="0" maxOccurs="1" name="LHME1" type="s:string" />
+                              <s:element minOccurs="0" maxOccurs="1" name="LHME2" type="s:string" />
+                              <s:element minOccurs="0" maxOccurs="1" name="LHME3" type="s:string" />
+                              <s:element minOccurs="0" maxOccurs="1" name="LETY1" type="s:string" />
+                              <s:element minOccurs="0" maxOccurs="1" name="LETY2" type="s:string" />
+                              <s:element minOccurs="0" maxOccurs="1" name="LETY3" type="s:string" />
+                              <s:element minOccurs="0" maxOccurs="1" name="LVSME" type="s:string" />
+                              <s:element minOccurs="0" maxOccurs="1" name="KZZUL" type="s:string" />
+                              <s:element minOccurs="0" maxOccurs="1" name="BLOCK" type="s:string" />
+                              <s:element minOccurs="0" maxOccurs="1" name="KZMBF" type="s:string" />
+                              <s:element minOccurs="0" maxOccurs="1" name="BSSKZ" type="s:string" />
+                              <s:element minOccurs="0" maxOccurs="1" name="MKAPV" type="s:string" />
+                              <s:element minOccurs="0" maxOccurs="1" name="BEZME" type="s:string" />
+                              <s:element minOccurs="0" maxOccurs="1" name="PLKPT" type="s:string" />
+                              <s:element minOccurs="0" maxOccurs="1" name="VOMEM" type="s:string" />
+                              <s:element minOccurs="0" maxOccurs="1" name="L2SKR" type="s:string" />
+                              <s:element minOccurs="0" maxOccurs="unbounded" name="E1MLGTM">
+                                <s:complexType>
+                                  <s:sequence>
+                                    <s:element minOccurs="0" maxOccurs="1" name="MSGFN" type="s:string" />
+                                    <s:element minOccurs="0" maxOccurs="1" name="LGTYP" type="s:string" />
+                                    <s:element minOccurs="0" maxOccurs="1" name="LVORM" type="s:string" />
+                                    <s:element minOccurs="0" maxOccurs="1" name="LGPLA" type="s:string" />
+                                    <s:element minOccurs="0" maxOccurs="1" name="LPMAX" type="s:string" />
+                                    <s:element minOccurs="0" maxOccurs="1" name="LPMIN" type="s:string" />
+                                    <s:element minOccurs="0" maxOccurs="1" name="MAMNG" type="s:string" />
+                                    <s:element minOccurs="0" maxOccurs="1" name="NSMNG" type="s:string" />
+                                    <s:element minOccurs="0" maxOccurs="1" name="KOBER" type="s:string" />
+                                    <s:element minOccurs="0" maxOccurs="1" name="RDMNG" type="s:string" />
+                                  </s:sequence>
+                                  <s:attribute name="SEGMENT" type="s:string" />
+                                </s:complexType>
+                              </s:element>
+                            </s:sequence>
+                            <s:attribute name="SEGMENT" type="s:string" />
+                          </s:complexType>
+                        </s:element>
+                        <s:element minOccurs="0" maxOccurs="unbounded" name="E1MVKEM">
+                          <s:complexType>
+                            <s:sequence>
+                              <s:element minOccurs="0" maxOccurs="1" name="MSGFN" type="s:string" />
+                              <s:element minOccurs="0" maxOccurs="1" name="VKORG" type="s:string" />
+                              <s:element minOccurs="0" maxOccurs="1" name="VTWEG" type="s:string" />
+                              <s:element minOccurs="0" maxOccurs="1" name="LVORM" type="s:string" />
+                              <s:element minOccurs="0" maxOccurs="1" name="VERSG" type="s:string" />
+                              <s:element minOccurs="0" maxOccurs="1" name="BONUS" type="s:string" />
+                              <s:element minOccurs="0" maxOccurs="1" name="PROVG" type="s:string" />
+                              <s:element minOccurs="0" maxOccurs="1" name="SKTOF" type="s:string" />
+                              <s:element minOccurs="0" maxOccurs="1" name="VMSTA" type="s:string" />
+                              <s:element minOccurs="0" maxOccurs="1" name="VMSTD" type="s:string" />
+                              <s:element minOccurs="0" maxOccurs="1" name="AUMNG" type="s:string" />
+                              <s:element minOccurs="0" maxOccurs="1" name="LFMNG" type="s:string" />
+                              <s:element minOccurs="0" maxOccurs="1" name="EFMNG" type="s:string" />
+                              <s:element minOccurs="0" maxOccurs="1" name="SCMNG" type="s:string" />
+                              <s:element minOccurs="0" maxOccurs="1" name="SCHME" type="s:string" />
+                              <s:element minOccurs="0" maxOccurs="1" name="VRKME" type="s:string" />
+                              <s:element minOccurs="0" maxOccurs="1" name="MTPOS" type="s:string" />
+                              <s:element minOccurs="0" maxOccurs="1" name="DWERK" type="s:string" />
+                              <s:element minOccurs="0" maxOccurs="1" name="PRODH" type="s:string" />
+                              <s:element minOccurs="0" maxOccurs="1" name="PMATN" type="s:string" />
+                              <s:element minOccurs="0" maxOccurs="1" name="KONDM" type="s:string" />
+                              <s:element minOccurs="0" maxOccurs="1" name="KTGRM" type="s:string" />
+                              <s:element minOccurs="0" maxOccurs="1" name="MVGR1" type="s:string" />
+                              <s:element minOccurs="0" maxOccurs="1" name="MVGR2" type="s:string" />
+                              <s:element minOccurs="0" maxOccurs="1" name="MVGR3" type="s:string" />
+                              <s:element minOccurs="0" maxOccurs="1" name="MVGR4" type="s:string" />
+                              <s:element minOccurs="0" maxOccurs="1" name="MVGR5" type="s:string" />
+                              <s:element minOccurs="0" maxOccurs="1" name="SSTUF" type="s:string" />
+                              <s:element minOccurs="0" maxOccurs="1" name="PFLKS" type="s:string" />
+                              <s:element minOccurs="0" maxOccurs="1" name="LSTFL" type="s:string" />
+                              <s:element minOccurs="0" maxOccurs="1" name="LSTVZ" type="s:string" />
+                              <s:element minOccurs="0" maxOccurs="1" name="LSTAK" type="s:string" />
+                              <s:element minOccurs="0" maxOccurs="1" name="PRAT1" type="s:string" />
+                              <s:element minOccurs="0" maxOccurs="1" name="PRAT2" type="s:string" />
+                              <s:element minOccurs="0" maxOccurs="1" name="PRAT3" type="s:string" />
+                              <s:element minOccurs="0" maxOccurs="1" name="PRAT4" type="s:string" />
+                              <s:element minOccurs="0" maxOccurs="1" name="PRAT5" type="s:string" />
+                              <s:element minOccurs="0" maxOccurs="1" name="PRAT6" type="s:string" />
+                              <s:element minOccurs="0" maxOccurs="1" name="PRAT7" type="s:string" />
+                              <s:element minOccurs="0" maxOccurs="1" name="PRAT8" type="s:string" />
+                              <s:element minOccurs="0" maxOccurs="1" name="PRAT9" type="s:string" />
+                              <s:element minOccurs="0" maxOccurs="1" name="PRATA" type="s:string" />
+                              <s:element minOccurs="0" maxOccurs="1" name="VAVME" type="s:string" />
+                              <s:element minOccurs="0" maxOccurs="1" name="RDPRF" type="s:string" />
+                              <s:element minOccurs="0" maxOccurs="1" name="MEGRU" type="s:string" />
+                              <s:element minOccurs="0" maxOccurs="1" name="PMATN_EXTERNAL" type="s:string" />
+                              <s:element minOccurs="0" maxOccurs="1" name="PMATN_VERSION" type="s:string" />
+                              <s:element minOccurs="0" maxOccurs="1" name="PMATN_GUID" type="s:string" />
+                            </s:sequence>
+                            <s:attribute name="SEGMENT" type="s:string" />
+                          </s:complexType>
+                        </s:element>
+                        <s:element minOccurs="0" maxOccurs="unbounded" name="E1MLANM">
+                          <s:complexType>
+                            <s:sequence>
+                              <s:element minOccurs="0" maxOccurs="1" name="MSGFN" type="s:string" />
+                              <s:element minOccurs="0" maxOccurs="1" name="ALAND" type="s:string" />
+                              <s:element minOccurs="0" maxOccurs="1" name="TATY1" type="s:string" />
+                              <s:element minOccurs="0" maxOccurs="1" name="TAXM1" type="s:string" />
+                              <s:element minOccurs="0" maxOccurs="1" name="TATY2" type="s:string" />
+                              <s:element minOccurs="0" maxOccurs="1" name="TAXM2" type="s:string" />
+                              <s:element minOccurs="0" maxOccurs="1" name="TATY3" type="s:string" />
+                              <s:element minOccurs="0" maxOccurs="1" name="TAXM3" type="s:string" />
+                              <s:element minOccurs="0" maxOccurs="1" name="TATY4" type="s:string" />
+                              <s:element minOccurs="0" maxOccurs="1" name="TAXM4" type="s:string" />
+                              <s:element minOccurs="0" maxOccurs="1" name="TATY5" type="s:string" />
+                              <s:element minOccurs="0" maxOccurs="1" name="TAXM5" type="s:string" />
+                              <s:element minOccurs="0" maxOccurs="1" name="TATY6" type="s:string" />
+                              <s:element minOccurs="0" maxOccurs="1" name="TAXM6" type="s:string" />
+                              <s:element minOccurs="0" maxOccurs="1" name="TATY7" type="s:string" />
+                              <s:element minOccurs="0" maxOccurs="1" name="TAXM7" type="s:string" />
+                              <s:element minOccurs="0" maxOccurs="1" name="TATY8" type="s:string" />
+                              <s:element minOccurs="0" maxOccurs="1" name="TAXM8" type="s:string" />
+                              <s:element minOccurs="0" maxOccurs="1" name="TATY9" type="s:string" />
+                              <s:element minOccurs="0" maxOccurs="1" name="TAXM9" type="s:string" />
+                              <s:element minOccurs="0" maxOccurs="1" name="TAXIM" type="s:string" />
+                            </s:sequence>
+                            <s:attribute name="SEGMENT" type="s:string" />
+                          </s:complexType>
+                        </s:element>
+                        <s:element minOccurs="0" maxOccurs="unbounded" name="E1MTXHM">
+                          <s:complexType>
+                            <s:sequence>
+                              <s:element minOccurs="0" maxOccurs="1" name="MSGFN" type="s:string" />
+                              <s:element minOccurs="0" maxOccurs="1" name="TDOBJECT" type="s:string" />
+                              <s:element minOccurs="0" maxOccurs="1" name="TDNAME" type="s:string" />
+                              <s:element minOccurs="0" maxOccurs="1" name="TDID" type="s:string" />
+                              <s:element minOccurs="0" maxOccurs="1" name="TDSPRAS" type="s:string" />
+                              <s:element minOccurs="0" maxOccurs="1" name="TDTEXTTYPE" type="s:string" />
+                              <s:element minOccurs="0" maxOccurs="1" name="SPRAS_ISO" type="s:string" />
+                              <s:element minOccurs="0" maxOccurs="unbounded" name="E1MTXLM">
+                                <s:complexType>
+                                  <s:sequence>
+                                    <s:element minOccurs="0" maxOccurs="1" name="MSGFN" type="s:string" />
+                                    <s:element minOccurs="0" maxOccurs="1" name="TDFORMAT" type="s:string" />
+                                    <s:element minOccurs="0" maxOccurs="1" name="TDLINE" type="s:string" />
+                                  </s:sequence>
+                                  <s:attribute name="SEGMENT" type="s:string" />
+                                </s:complexType>
+                              </s:element>
+                            </s:sequence>
+                            <s:attribute name="SEGMENT" type="s:string" />
+                          </s:complexType>
+                        </s:element>
+                        <s:element minOccurs="0" maxOccurs="unbounded" name="E1CUCFG">
+                          <s:complexType>
+                            <s:sequence>
+                              <s:element minOccurs="0" maxOccurs="1" name="POSEX" type="s:string" />
+                              <s:element minOccurs="0" maxOccurs="1" name="CONFIG_ID" type="s:string" />
+                              <s:element minOccurs="0" maxOccurs="1" name="ROOT_ID" type="s:string" />
+                              <s:element minOccurs="0" maxOccurs="1" name="SCE" type="s:string" />
+                              <s:element minOccurs="0" maxOccurs="1" name="KBNAME" type="s:string" />
+                              <s:element minOccurs="0" maxOccurs="1" name="KBVERSION" type="s:string" />
+                              <s:element minOccurs="0" maxOccurs="1" name="COMPLETE" type="s:string" />
+                              <s:element minOccurs="0" maxOccurs="1" name="CONSISTENT" type="s:string" />
+                              <s:element minOccurs="0" maxOccurs="1" name="CFGINFO" type="s:string" />
+                              <s:element minOccurs="0" maxOccurs="1" name="KBPROFILE" type="s:string" />
+                              <s:element minOccurs="0" maxOccurs="1" name="KBLANGUAGE" type="s:string" />
+                              <s:element minOccurs="0" maxOccurs="1" name="CBASE_ID" type="s:string" />
+                              <s:element minOccurs="0" maxOccurs="1" name="CBASE_ID_TYPE" type="s:string" />
+                              <s:element minOccurs="0" maxOccurs="unbounded" name="E1CUINS">
+                                <s:complexType>
+                                  <s:sequence>
+                                    <s:element minOccurs="0" maxOccurs="1" name="INST_ID" type="s:string" />
+                                    <s:element minOccurs="0" maxOccurs="1" name="OBJ_TYPE" type="s:string" />
+                                    <s:element minOccurs="0" maxOccurs="1" name="CLASS_TYPE" type="s:string" />
+                                    <s:element minOccurs="0" maxOccurs="1" name="OBJ_KEY" type="s:string" />
+                                    <s:element minOccurs="0" maxOccurs="1" name="OBJ_TXT" type="s:string" />
+                                    <s:element minOccurs="0" maxOccurs="1" name="QUANTITY" type="s:string" />
+                                    <s:element minOccurs="0" maxOccurs="1" name="AUTHOR" type="s:string" />
+                                    <s:element minOccurs="0" maxOccurs="1" name="QUANTITY_UNIT" type="s:string" />
+                                    <s:element minOccurs="0" maxOccurs="1" name="COMPLETE" type="s:string" />
+                                    <s:element minOccurs="0" maxOccurs="1" name="CONSISTENT" type="s:string" />
+                                    <s:element minOccurs="0" maxOccurs="1" name="OBJECT_GUID" type="s:string" />
+                                    <s:element minOccurs="0" maxOccurs="1" name="PERSIST_ID" type="s:string" />
+                                    <s:element minOccurs="0" maxOccurs="1" name="PERSIST_ID_TYPE" type="s:string" />
+                                  </s:sequence>
+                                  <s:attribute name="SEGMENT" type="s:string" />
+                                </s:complexType>
+                              </s:element>
+                              <s:element minOccurs="0" maxOccurs="unbounded" name="E1CUVAL">
+                                <s:complexType>
+                                  <s:sequence>
+                                    <s:element minOccurs="0" maxOccurs="1" name="INST_ID" type="s:string" />
+                                    <s:element minOccurs="0" maxOccurs="1" name="CHARC" type="s:string" />
+                                    <s:element minOccurs="0" maxOccurs="1" name="CHARC_TXT" type="s:string" />
+                                    <s:element minOccurs="0" maxOccurs="1" name="VALUE" type="s:string" />
+                                    <s:element minOccurs="0" maxOccurs="1" name="VALUE_TXT" type="s:string" />
+                                    <s:element minOccurs="0" maxOccurs="1" name="AUTHOR" type="s:string" />
+                                    <s:element minOccurs="0" maxOccurs="1" name="VALUE_TO" type="s:string" />
+                                    <s:element minOccurs="0" maxOccurs="1" name="VALCODE" type="s:string" />
+                                  </s:sequence>
+                                  <s:attribute name="SEGMENT" type="s:string" />
+                                </s:complexType>
+                              </s:element>
+                              <s:element minOccurs="0" maxOccurs="unbounded" name="E1CUCOM">
+                                <s:complexType>
+                                  <s:sequence>
+                                    <s:element minOccurs="0" maxOccurs="1" name="MSGFN" type="s:string" />
+                                    <s:element minOccurs="0" maxOccurs="1" name="C_PROFILE" type="s:string" />
+                                    <s:element minOccurs="0" maxOccurs="1" name="CLASSTYPE" type="s:string" />
+                                    <s:element minOccurs="0" maxOccurs="1" name="ORGAREAS" type="s:string" />
+                                    <s:element minOccurs="0" maxOccurs="1" name="STATUS" type="s:string" />
+                                    <s:element minOccurs="0" maxOccurs="1" name="BOMAPPL" type="s:string" />
+                                    <s:element minOccurs="0" maxOccurs="1" name="FLAVAILCH" type="s:string" />
+                                    <s:element minOccurs="0" maxOccurs="1" name="BOMEXPL" type="s:string" />
+                                    <s:element minOccurs="0" maxOccurs="1" name="TASKLEXPL" type="s:string" />
+                                    <s:element minOccurs="0" maxOccurs="1" name="INITSCREEN" type="s:string" />
+                                    <s:element minOccurs="0" maxOccurs="1" name="FLASSEMBLY" type="s:string" />
+                                    <s:element minOccurs="0" maxOccurs="1" name="FLRESULT" type="s:string" />
+                                    <s:element minOccurs="0" maxOccurs="1" name="FLMDATA" type="s:string" />
+                                    <s:element minOccurs="0" maxOccurs="1" name="FLCASONLY" type="s:string" />
+                                    <s:element minOccurs="0" maxOccurs="1" name="FLMANCHANG" type="s:string" />
+                                    <s:element minOccurs="0" maxOccurs="1" name="FLHOLDBOM" type="s:string" />
+                                    <s:element minOccurs="0" maxOccurs="1" name="FLDELETE" type="s:string" />
+                                    <s:element minOccurs="0" maxOccurs="1" name="DESIGN" type="s:string" />
+                                    <s:element minOccurs="0" maxOccurs="1" name="NEUTR" type="s:string" />
+                                    <s:element minOccurs="0" maxOccurs="1" name="CHAR_VALU" type="s:string" />
+                                    <s:element minOccurs="0" maxOccurs="1" name="A_LAISO" type="s:string" />
+                                    <s:element minOccurs="0" maxOccurs="1" name="SCOPE_CHAR" type="s:string" />
+                                    <s:element minOccurs="0" maxOccurs="1" name="SCOPE_VALU" type="s:string" />
+                                    <s:element minOccurs="0" maxOccurs="1" name="FL_EXCLUDE" type="s:string" />
+                                    <s:element minOccurs="0" maxOccurs="1" name="DISPLAY" type="s:string" />
+                                    <s:element minOccurs="0" maxOccurs="1" name="PRICING" type="s:string" />
+                                    <s:element minOccurs="0" maxOccurs="1" name="CONFIGUR" type="s:string" />
+                                    <s:element minOccurs="0" maxOccurs="1" name="DEFVALU_DE" type="s:string" />
+                                    <s:element minOccurs="0" maxOccurs="1" name="FL_MARK" type="s:string" />
+                                    <s:element minOccurs="0" maxOccurs="1" name="DEFVALU_CC" type="s:string" />
+                                    <s:element minOccurs="0" maxOccurs="1" name="TYPM_SEL" type="s:string" />
+                                    <s:element minOccurs="0" maxOccurs="1" name="TYPM_STRA" type="s:string" />
+                                    <s:element minOccurs="0" maxOccurs="1" name="FL_SC_CHAR" type="s:string" />
+                                    <s:element minOccurs="0" maxOccurs="1" name="FL_SC_DEP" type="s:string" />
+                                    <s:element minOccurs="0" maxOccurs="1" name="FL_SC_KN" type="s:string" />
+                                    <s:element minOccurs="0" maxOccurs="1" name="FL_SC_CMPF" type="s:string" />
+                                    <s:element minOccurs="0" maxOccurs="1" name="MULTIL_STRU" type="s:string" />
+                                    <s:element minOccurs="0" maxOccurs="1" name="FL_DPSEU" type="s:string" />
+                                    <s:element minOccurs="0" maxOccurs="1" name="OB_FIX" type="s:string" />
+                                    <s:element minOccurs="0" maxOccurs="1" name="OB_INST" type="s:string" />
+                                    <s:element minOccurs="0" maxOccurs="1" name="FL_EOASL" type="s:string" />
+                                    <s:element minOccurs="0" maxOccurs="1" name="FL_SAASL" type="s:string" />
+                                    <s:element minOccurs="0" maxOccurs="1" name="FL_OBJ_MAT" type="s:string" />
+                                    <s:element minOccurs="0" maxOccurs="1" name="FL_OBJ_DOC" type="s:string" />
+                                    <s:element minOccurs="0" maxOccurs="1" name="FL_OBJ_CLS" type="s:string" />
+                                    <s:element minOccurs="0" maxOccurs="1" name="FL_OBJ_TXT" type="s:string" />
+                                    <s:element minOccurs="0" maxOccurs="1" name="FL_SDREL" type="s:string" />
+                                    <s:element minOccurs="0" maxOccurs="1" name="FL_KOREL" type="s:string" />
+                                    <s:element minOccurs="0" maxOccurs="1" name="FL_FEREL" type="s:string" />
+                                    <s:element minOccurs="0" maxOccurs="1" name="FL_INREL" type="s:string" />
+                                    <s:element minOccurs="0" maxOccurs="1" name="FL_KAREL" type="s:string" />
+                                    <s:element minOccurs="0" maxOccurs="1" name="POSTYPEN" type="s:string" />
+                                    <s:element minOccurs="0" maxOccurs="1" name="SORTF1" type="s:string" />
+                                    <s:element minOccurs="0" maxOccurs="1" name="SORTF2" type="s:string" />
+                                    <s:element minOccurs="0" maxOccurs="1" name="SORTF3" type="s:string" />
+                                    <s:element minOccurs="0" maxOccurs="1" name="SORTF4" type="s:string" />
+                                    <s:element minOccurs="0" maxOccurs="1" name="SORTF5" type="s:string" />
+                                    <s:element minOccurs="0" maxOccurs="1" name="CLASSF1" type="s:string" />
+                                    <s:element minOccurs="0" maxOccurs="1" name="CLASSF2" type="s:string" />
+                                    <s:element minOccurs="0" maxOccurs="1" name="CLASSF3" type="s:string" />
+                                    <s:element minOccurs="0" maxOccurs="1" name="CLASSF4" type="s:string" />
+                                    <s:element minOccurs="0" maxOccurs="1" name="CLASSF5" type="s:string" />
+                                    <s:element minOccurs="0" maxOccurs="1" name="PRIO" type="s:string" />
+                                    <s:element minOccurs="0" maxOccurs="1" name="PRSTL" type="s:string" />
+                                    <s:element minOccurs="0" maxOccurs="1" name="UMBEW" type="s:string" />
+                                    <s:element minOccurs="0" maxOccurs="1" name="FLBROWSER" type="s:string" />
+                                    <s:element minOccurs="0" maxOccurs="1" name="FL_PROF_OBOM" type="s:string" />
+                                  </s:sequence>
+                                  <s:attribute name="SEGMENT" type="s:string" />
+                                </s:complexType>
+                              </s:element>
+                            </s:sequence>
+                            <s:attribute name="SEGMENT" type="s:string" />
+                          </s:complexType>
+                        </s:element>
+                      </s:sequence>
+                      <s:attribute name="SEGMENT" type="s:string" />
+                    </s:complexType>
+                  </s:element>
+                  <s:element minOccurs="0" maxOccurs="1" name="E1UPSLINK">
+                    <s:complexType>
+                      <s:sequence>
+                        <s:element minOccurs="0" maxOccurs="1" name="UPSNAM" type="s:string" />
+                        <s:element minOccurs="0" maxOccurs="1" name="ORGNAM" type="s:string" />
+                        <s:element minOccurs="0" maxOccurs="1" name="MESTYP" type="s:string" />
+                        <s:element minOccurs="0" maxOccurs="1" name="OBJID" type="s:string" />
+                        <s:element minOccurs="0" maxOccurs="1" name="OBJVAL" type="s:string" />
+                      </s:sequence>
+                      <s:attribute name="SEGMENT" type="s:string" />
+                    </s:complexType>
+                  </s:element>
+                </s:sequence>
+                <s:attribute name="BEGIN" type="s:string" />
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="ZMATMAS5.Z1MARCM">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="1" name="ZZPOLICY" type="s:string" />
+        </s:sequence>
+        <s:attribute name="SEGMENT" type="s:string" />
+      </s:complexType>
+      <s:element name="SYSTAT01_GENERALLEDGERRESPONSE">
+        <s:complexType mixed="true">
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="IDOC">
+              <s:complexType mixed="true">
+                <s:sequence>
+                  <s:element minOccurs="0" maxOccurs="1" name="EDI_DC40">
+                    <s:complexType>
+                      <s:sequence>
+                        <s:element minOccurs="0" maxOccurs="1" name="TABNAM" type="s:string" />
+                        <s:element minOccurs="0" maxOccurs="1" name="DIRECT" type="s:string" />
+                        <s:element minOccurs="0" maxOccurs="1" name="IDOCTYP" type="s:string" />
+                        <s:element minOccurs="0" maxOccurs="1" name="MESTYP" type="s:string" />
+                        <s:element minOccurs="0" maxOccurs="1" name="SNDPOR" type="s:string" />
+                        <s:element minOccurs="0" maxOccurs="1" name="SNDPRT" type="s:string" />
+                        <s:element minOccurs="0" maxOccurs="1" name="SNDPRN" type="s:string" />
+                        <s:element minOccurs="0" maxOccurs="1" name="RCVPOR" type="s:string" />
+                        <s:element minOccurs="0" maxOccurs="1" name="RCVPRT" type="s:string" />
+                        <s:element minOccurs="0" maxOccurs="1" name="RCVPRN" type="s:string" />
+                      </s:sequence>
+                      <s:attribute name="SEGMENT" type="s:string" />
+                    </s:complexType>
+                  </s:element>
+                  <s:element minOccurs="0" maxOccurs="1" name="E1STATS">
+                    <s:complexType>
+                      <s:sequence>
+                        <s:element minOccurs="0" maxOccurs="1" name="DOCNUM" type="s:string" />
+                        <s:element minOccurs="0" maxOccurs="1" name="LOGDAT" type="s:string" />
+                        <s:element minOccurs="0" maxOccurs="1" name="LOGTIM" type="s:string" />
+                        <s:element minOccurs="0" maxOccurs="1" name="STATUS" type="s:string" />
+                        <s:element minOccurs="0" maxOccurs="1" name="UNAME" type="s:string" />
+                        <s:element minOccurs="0" maxOccurs="1" name="REPID" type="s:string" />
+                        <s:element minOccurs="0" maxOccurs="1" name="STACOD" type="s:string" />
+                        <s:element minOccurs="0" maxOccurs="1" name="STATXT" type="s:string" />
+                        <s:element minOccurs="0" maxOccurs="1" name="STATYP" type="s:string" />
+                      </s:sequence>
+                      <s:attribute name="SEGMENT" type="s:string" />
+                    </s:complexType>
+                  </s:element>
+                </s:sequence>
+                <s:attribute name="BEGIN" type="s:string" />
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="SYSTAT01_TESTCERTIFICATERESPONSE">
+        <s:complexType mixed="true">
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="IDOC">
+              <s:complexType mixed="true">
+                <s:sequence>
+                  <s:element minOccurs="0" maxOccurs="1" name="EDI_DC40">
+                    <s:complexType>
+                      <s:sequence>
+                        <s:element minOccurs="0" maxOccurs="1" name="TABNAM" type="s:string" />
+                        <s:element minOccurs="0" maxOccurs="1" name="DIRECT" type="s:string" />
+                        <s:element minOccurs="0" maxOccurs="1" name="IDOCTYP" type="s:string" />
+                        <s:element minOccurs="0" maxOccurs="1" name="MESTYP" type="s:string" />
+                        <s:element minOccurs="0" maxOccurs="1" name="SNDPOR" type="s:string" />
+                        <s:element minOccurs="0" maxOccurs="1" name="SNDPRT" type="s:string" />
+                        <s:element minOccurs="0" maxOccurs="1" name="SNDPRN" type="s:string" />
+                        <s:element minOccurs="0" maxOccurs="1" name="RCVPOR" type="s:string" />
+                        <s:element minOccurs="0" maxOccurs="1" name="RCVPRT" type="s:string" />
+                        <s:element minOccurs="0" maxOccurs="1" name="RCVPRN" type="s:string" />
+                      </s:sequence>
+                      <s:attribute name="SEGMENT" type="s:string" />
+                    </s:complexType>
+                  </s:element>
+                  <s:element minOccurs="0" maxOccurs="1" name="E1STATS">
+                    <s:complexType>
+                      <s:sequence>
+                        <s:element minOccurs="0" maxOccurs="1" name="DOCNUM" type="s:string" />
+                        <s:element minOccurs="0" maxOccurs="1" name="LOGDAT" type="s:string" />
+                        <s:element minOccurs="0" maxOccurs="1" name="LOGTIM" type="s:string" />
+                        <s:element minOccurs="0" maxOccurs="1" name="STATUS" type="s:string" />
+                        <s:element minOccurs="0" maxOccurs="1" name="UNAME" type="s:string" />
+                        <s:element minOccurs="0" maxOccurs="1" name="REPID" type="s:string" />
+                        <s:element minOccurs="0" maxOccurs="1" name="STACOD" type="s:string" />
+                        <s:element minOccurs="0" maxOccurs="1" name="STATXT" type="s:string" />
+                        <s:element minOccurs="0" maxOccurs="1" name="STATYP" type="s:string" />
+                      </s:sequence>
+                      <s:attribute name="SEGMENT" type="s:string" />
+                    </s:complexType>
+                  </s:element>
+                </s:sequence>
+                <s:attribute name="BEGIN" type="s:string" />
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+    </s:schema>
+    <s:schema elementFormDefault="qualified" targetNamespace="Spm.Service.ReceiveFromSap">
+      <s:element name="productionOrderTrigger" type="s:string" />
+      <s:element name="plannedOrderTrigger" type="s:string" />
+      <s:element name="testCertificateOutboundTrigger" type="s:string" />
+    </s:schema>
+  </wsdl:types>
+  <wsdl:message name="ProductAchievementResponseSoapIn">
+    <wsdl:part name="SYSTAT01_PRODUCTACHIEVEMENTRESPONSE" element="s0:SYSTAT01_PRODUCTACHIEVEMENTRESPONSE" />
+  </wsdl:message>
+  <wsdl:message name="ProductAchievementResponseSoapOut" />
+  <wsdl:message name="PurchaseOrderCreateResponseSoapIn">
+    <wsdl:part name="SYSTAT01_PURCHASEORDERCREATERESPONSE" element="s0:SYSTAT01_PURCHASEORDERCREATERESPONSE" />
+  </wsdl:message>
+  <wsdl:message name="PurchaseOrderCreateResponseSoapOut" />
+  <wsdl:message name="PurchaseOrderChangeResponseSoapIn">
+    <wsdl:part name="SYSTAT01_PURCHASEORDERCHANGERESPONSE" element="s0:SYSTAT01_PURCHASEORDERCHANGERESPONSE" />
+  </wsdl:message>
+  <wsdl:message name="PurchaseOrderChangeResponseSoapOut" />
+  <wsdl:message name="ProductionOrderStatusResponseSoapIn">
+    <wsdl:part name="SYSTAT01_PRODUCTIONORDERSTATUSRESPONSE" element="s0:SYSTAT01_PRODUCTIONORDERSTATUSRESPONSE" />
+  </wsdl:message>
+  <wsdl:message name="ProductionOrderStatusResponseSoapOut" />
+  <wsdl:message name="GoodsReceiptResponseSoapIn">
+    <wsdl:part name="SYSTAT01_GOODSRECEIPTRESPONSE" element="s0:SYSTAT01_GOODSRECEIPTRESPONSE" />
+  </wsdl:message>
+  <wsdl:message name="GoodsReceiptResponseSoapOut" />
+  <wsdl:message name="MaterialMasterCreateResponseSoapIn">
+    <wsdl:part name="SYSTAT01_MATERIALMASTERRESPONSE" element="s0:SYSTAT01_MATERIALMASTERRESPONSE" />
+  </wsdl:message>
+  <wsdl:message name="MaterialMasterCreateResponseSoapOut" />
+  <wsdl:message name="ProductionOrderRequestSoapIn">
+    <wsdl:part name="productionOrderTrigger" element="tns:productionOrderTrigger" />
+  </wsdl:message>
+  <wsdl:message name="ProductionOrderRequestSoapOut" />
+  <wsdl:message name="PlannedOrderRequestSoapIn">
+    <wsdl:part name="plannedOrderTrigger" element="tns:plannedOrderTrigger" />
+  </wsdl:message>
+  <wsdl:message name="PlannedOrderRequestSoapOut" />
+  <wsdl:message name="TestCertificateRequestSoapIn">
+    <wsdl:part name="ZOBTC01" element="s0:ZOBTC01" />
+  </wsdl:message>
+  <wsdl:message name="TestCertificateRequestSoapOut" />
+  <wsdl:message name="MaterialMasterUpdateRequestSoapIn">
+    <wsdl:part name="ZMATMAS5" element="s0:ZMATMAS5" />
+  </wsdl:message>
+  <wsdl:message name="MaterialMasterUpdateRequestSoapOut" />
+  <wsdl:message name="GeneralLedgerResponseSoapIn">
+    <wsdl:part name="SYSTAT01_GENERALLEDGERRESPONSE" element="s0:SYSTAT01_GENERALLEDGERRESPONSE" />
+  </wsdl:message>
+  <wsdl:message name="GeneralLedgerResponseSoapOut" />
+  <wsdl:message name="TestCertificateOutboundResponseSoapIn">
+    <wsdl:part name="SYSTAT01_TESTCERTIFICATERESPONSE" element="s0:SYSTAT01_TESTCERTIFICATERESPONSE" />
+  </wsdl:message>
+  <wsdl:message name="TestCertificateOutboundResponseSoapOut" />
+  <wsdl:message name="TestCertificateOutboundTriggerRequestSoapIn">
+    <wsdl:part name="testCertificateOutboundTrigger" element="tns:testCertificateOutboundTrigger" />
+  </wsdl:message>
+  <wsdl:message name="TestCertificateOutboundTriggerRequestSoapOut" />
+  <wsdl:portType name="SpmWebServiceSoap">
+    <wsdl:operation name="ProductAchievementResponse">
+      <wsdl:input message="tns:ProductAchievementResponseSoapIn" />
+      <wsdl:output message="tns:ProductAchievementResponseSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="PurchaseOrderCreateResponse">
+      <wsdl:input message="tns:PurchaseOrderCreateResponseSoapIn" />
+      <wsdl:output message="tns:PurchaseOrderCreateResponseSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="PurchaseOrderChangeResponse">
+      <wsdl:input message="tns:PurchaseOrderChangeResponseSoapIn" />
+      <wsdl:output message="tns:PurchaseOrderChangeResponseSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="ProductionOrderStatusResponse">
+      <wsdl:input message="tns:ProductionOrderStatusResponseSoapIn" />
+      <wsdl:output message="tns:ProductionOrderStatusResponseSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GoodsReceiptResponse">
+      <wsdl:input message="tns:GoodsReceiptResponseSoapIn" />
+      <wsdl:output message="tns:GoodsReceiptResponseSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="MaterialMasterCreateResponse">
+      <wsdl:input message="tns:MaterialMasterCreateResponseSoapIn" />
+      <wsdl:output message="tns:MaterialMasterCreateResponseSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="ProductionOrderRequest">
+      <wsdl:input message="tns:ProductionOrderRequestSoapIn" />
+      <wsdl:output message="tns:ProductionOrderRequestSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="PlannedOrderRequest">
+      <wsdl:input message="tns:PlannedOrderRequestSoapIn" />
+      <wsdl:output message="tns:PlannedOrderRequestSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="TestCertificateRequest">
+      <wsdl:input message="tns:TestCertificateRequestSoapIn" />
+      <wsdl:output message="tns:TestCertificateRequestSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="MaterialMasterUpdateRequest">
+      <wsdl:input message="tns:MaterialMasterUpdateRequestSoapIn" />
+      <wsdl:output message="tns:MaterialMasterUpdateRequestSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GeneralLedgerResponse">
+      <wsdl:input message="tns:GeneralLedgerResponseSoapIn" />
+      <wsdl:output message="tns:GeneralLedgerResponseSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="TestCertificateOutboundResponse">
+      <wsdl:input message="tns:TestCertificateOutboundResponseSoapIn" />
+      <wsdl:output message="tns:TestCertificateOutboundResponseSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="TestCertificateOutboundTriggerRequest">
+      <wsdl:input message="tns:TestCertificateOutboundTriggerRequestSoapIn" />
+      <wsdl:output message="tns:TestCertificateOutboundTriggerRequestSoapOut" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="SpmWebServiceSoap" type="tns:SpmWebServiceSoap">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="ProductAchievementResponse">
+      <soap:operation soapAction="Spm.Service.ReceiveFromSap/ProductAchievementResponse" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="PurchaseOrderCreateResponse">
+      <soap:operation soapAction="Spm.Service.ReceiveFromSap/PurchaseOrderCreateResponse" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="PurchaseOrderChangeResponse">
+      <soap:operation soapAction="Spm.Service.ReceiveFromSap/PurchaseOrderChangeResponse" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ProductionOrderStatusResponse">
+      <soap:operation soapAction="Spm.Service.ReceiveFromSap/ProductionOrderStatusResponse" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GoodsReceiptResponse">
+      <soap:operation soapAction="Spm.Service.ReceiveFromSap/GoodsReceiptResponse" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="MaterialMasterCreateResponse">
+      <soap:operation soapAction="Spm.Service.ReceiveFromSap/MaterialMasterCreateResponse" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ProductionOrderRequest">
+      <soap:operation soapAction="Spm.Service.ReceiveFromSap/ProductionOrderRequest" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="PlannedOrderRequest">
+      <soap:operation soapAction="Spm.Service.ReceiveFromSap/PlannedOrderRequest" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="TestCertificateRequest">
+      <soap:operation soapAction="Spm.Service.ReceiveFromSap/TestCertificateRequest" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="MaterialMasterUpdateRequest">
+      <soap:operation soapAction="Spm.Service.ReceiveFromSap/MaterialMasterUpdateRequest" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GeneralLedgerResponse">
+      <soap:operation soapAction="Spm.Service.ReceiveFromSap/GeneralLedgerResponse" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="TestCertificateOutboundResponse">
+      <soap:operation soapAction="Spm.Service.ReceiveFromSap/TestCertificateOutboundResponse" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="TestCertificateOutboundTriggerRequest">
+      <soap:operation soapAction="Spm.Service.ReceiveFromSap/TestCertificateOutboundTriggerRequest" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="SpmWebServiceSoap12" type="tns:SpmWebServiceSoap">
+    <soap12:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="ProductAchievementResponse">
+      <soap12:operation soapAction="Spm.Service.ReceiveFromSap/ProductAchievementResponse" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="PurchaseOrderCreateResponse">
+      <soap12:operation soapAction="Spm.Service.ReceiveFromSap/PurchaseOrderCreateResponse" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="PurchaseOrderChangeResponse">
+      <soap12:operation soapAction="Spm.Service.ReceiveFromSap/PurchaseOrderChangeResponse" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ProductionOrderStatusResponse">
+      <soap12:operation soapAction="Spm.Service.ReceiveFromSap/ProductionOrderStatusResponse" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GoodsReceiptResponse">
+      <soap12:operation soapAction="Spm.Service.ReceiveFromSap/GoodsReceiptResponse" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="MaterialMasterCreateResponse">
+      <soap12:operation soapAction="Spm.Service.ReceiveFromSap/MaterialMasterCreateResponse" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ProductionOrderRequest">
+      <soap12:operation soapAction="Spm.Service.ReceiveFromSap/ProductionOrderRequest" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="PlannedOrderRequest">
+      <soap12:operation soapAction="Spm.Service.ReceiveFromSap/PlannedOrderRequest" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="TestCertificateRequest">
+      <soap12:operation soapAction="Spm.Service.ReceiveFromSap/TestCertificateRequest" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="MaterialMasterUpdateRequest">
+      <soap12:operation soapAction="Spm.Service.ReceiveFromSap/MaterialMasterUpdateRequest" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GeneralLedgerResponse">
+      <soap12:operation soapAction="Spm.Service.ReceiveFromSap/GeneralLedgerResponse" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="TestCertificateOutboundResponse">
+      <soap12:operation soapAction="Spm.Service.ReceiveFromSap/TestCertificateOutboundResponse" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="TestCertificateOutboundTriggerRequest">
+      <soap12:operation soapAction="Spm.Service.ReceiveFromSap/TestCertificateOutboundTriggerRequest" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="SpmWebService">
+    <wsdl:port name="SpmWebServiceSoap" binding="tns:SpmWebServiceSoap">
+      <soap:address location="http://localhost/SapResponse/SpmWebService.asmx" />
+    </wsdl:port>
+    <wsdl:port name="SpmWebServiceSoap12" binding="tns:SpmWebServiceSoap12">
+      <soap12:address location="http://localhost/SapResponse/SpmWebService.asmx" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

@@ -1,0 +1,256 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{03B95433-2796-4988-A666-A3C4F7030AED}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Spm.OrrSys.Service</RootNamespace>
+    <AssemblyName>Spm.OrrSys.Service</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Castle.Core, Version=3.3.0.0, Culture=neutral, PublicKeyToken=407dd0808d44fbdc, processorArchitecture=MSIL">
+      <HintPath>..\packages\Castle.Core.3.3.3\lib\net45\Castle.Core.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Castle.Windsor, Version=3.3.0.0, Culture=neutral, PublicKeyToken=407dd0808d44fbdc, processorArchitecture=MSIL">
+      <HintPath>..\packages\Castle.Windsor.3.3.0\lib\net45\Castle.Windsor.dll</HintPath>
+    </Reference>
+    <Reference Include="FluentNHibernate, Version=2.0.1.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\FluentNHibernate.2.0.1.0\lib\net40\FluentNHibernate.dll</HintPath>
+    </Reference>
+    <Reference Include="log4net, Version=1.2.11.0, Culture=neutral, PublicKeyToken=669e0ddf0bb1aa2a, processorArchitecture=MSIL">
+      <HintPath>..\packages\log4net.2.0.0\lib\net40-full\log4net.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="NHibernate, Version=4.0.0.4000, Culture=neutral, PublicKeyToken=aa95f207798dfdb4, processorArchitecture=MSIL">
+      <HintPath>..\packages\NHibernate.4.0.3.4000\lib\net40\NHibernate.dll</HintPath>
+    </Reference>
+    <Reference Include="NServiceBus.Core, Version=5.0.0.0, Culture=neutral, PublicKeyToken=9fc386479f8a226c, processorArchitecture=MSIL">
+      <HintPath>..\packages\NServiceBus.5.2.21\lib\net45\NServiceBus.Core.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="NServiceBus.Host, Version=5.0.0.0, Culture=neutral, PublicKeyToken=9fc386479f8a226c, processorArchitecture=MSIL">
+      <HintPath>..\packages\NServiceBus.Host.5.0.0\lib\net45\NServiceBus.Host.exe</HintPath>
+    </Reference>
+    <Reference Include="NServiceBus.Log4Net, Version=1.0.0.0, Culture=neutral, PublicKeyToken=9fc386479f8a226c, processorArchitecture=MSIL">
+      <HintPath>..\packages\NServiceBus.Log4Net.1.0.0\lib\net45\NServiceBus.Log4Net.dll</HintPath>
+    </Reference>
+    <Reference Include="NServiceBus.NHibernate, Version=6.0.0.0, Culture=neutral, PublicKeyToken=9fc386479f8a226c, processorArchitecture=MSIL">
+      <HintPath>..\packages\NServiceBus.NHibernate.6.2.5\lib\net45\NServiceBus.NHibernate.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="NServiceBus.ObjectBuilder.CastleWindsor, Version=5.0.0.0, Culture=neutral, PublicKeyToken=9fc386479f8a226c, processorArchitecture=MSIL">
+      <HintPath>..\packages\NServiceBus.CastleWindsor.5.0.0\lib\net45\NServiceBus.ObjectBuilder.CastleWindsor.dll</HintPath>
+    </Reference>
+    <Reference Include="ServiceControl.Plugin.Nsb5.Heartbeat, Version=3.0.0.0, Culture=neutral, PublicKeyToken=9fc386479f8a226c, processorArchitecture=MSIL">
+      <HintPath>..\packages\ServiceControl.Plugin.Nsb5.Heartbeat.3.0.1\lib\net45\ServiceControl.Plugin.Nsb5.Heartbeat.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.OracleClient" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.ServiceModel" />
+    <Reference Include="System.Transactions" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Business\Constants.cs" />
+    <Compile Include="TestCertificates\DeleteTestCertfificates.cs" />
+    <Compile Include="TestCertificates\IDeleteTestCertificates.cs" />
+    <Compile Include="Business\IDoPlannedOrderBusiness.cs" />
+    <Compile Include="Business\IDoProductAchievementBusiness.cs" />
+    <Compile Include="Business\IDoProductionOrderBusiness.cs" />
+    <Compile Include="Business\IDoTestCertificateBusiness.cs" />
+    <Compile Include="Business\IProvideSapInboundSpecificBusinessRules.cs" />
+    <Compile Include="Business\IUniqueNumbers.cs" />
+    <Compile Include="TestCertificates\IWorkWithTestCertificates.cs" />
+    <Compile Include="Business\ProductAchievementBusiness.cs" />
+    <Compile Include="Business\SapInboundSpecificBusinessRules.cs" />
+    <Compile Include="Business\PlannedOrdersBusiness.cs" />
+    <Compile Include="Business\ProductionOrderBusiness.cs" />
+    <Compile Include="Business\TestCertificateBusiness.cs" />
+    <Compile Include="TestCertificates\WorkWithTestCertificates.cs" />
+    <Compile Include="Business\UniqueNumber.cs" />
+    <Compile Include="Config\AuditQueueConfig.cs" />
+    <Compile Include="Config\EndpointRouting.cs" />
+    <Compile Include="Config\ProfileConfigVariables.cs" />
+    <Compile Include="Config\ErrorQueueConfig.cs" />
+    <Compile Include="Config\LoggingForProfiles.cs" />
+    <Compile Include="Config\ProfileConfig.cs" />
+    <Compile Include="Constants.cs" />
+    <Compile Include="Di\IocInstaller.cs" />
+    <Compile Include="Domain\DespatchedPacksByCustomerOrder.cs" />
+    <Compile Include="Domain\F4101.cs" />
+    <Compile Include="Domain\MapBranch.cs" />
+    <Compile Include="Domain\MapCompanyCode.cs" />
+    <Compile Include="Domain\MapCostCentreGlPosting.cs" />
+    <Compile Include="Domain\MapDocTypes.cs" />
+    <Compile Include="Domain\MapGlAccountsGlPosting.cs" />
+    <Compile Include="Domain\MapLocation.cs" />
+    <Compile Include="Domain\MapMaterialGroup.cs" />
+    <Compile Include="Domain\MapPlant.cs" />
+    <Compile Include="Domain\MapProfitCentreGlPosting.cs" />
+    <Compile Include="Domain\MapPurchaseGroup.cs" />
+    <Compile Include="Domain\MapUnitOfMeasure.cs" />
+    <Compile Include="Domain\OrrSysF3460Z1.cs" />
+    <Compile Include="Domain\F4104.cs" />
+    <Compile Include="Config\EndpointConfig.cs" />
+    <Compile Include="Domain\OrrSysF554801Z.cs" />
+    <Compile Include="Domain\DemandSapJde.cs" />
+    <Compile Include="Domain\DemandSapJdeWo.cs" />
+    <Compile Include="Domain\OrrSysF554801ZHistory.cs" />
+    <Compile Include="Domain\OrrSysProcessVariable.cs" />
+    <Compile Include="Dto\DispatchedPacksByCustomerOrderDto.cs" />
+    <Compile Include="Dto\DuplicateProductionOrdersDto.cs" />
+    <Compile Include="Dto\JdeItemMasterDetailDto.cs" />
+    <Compile Include="Dto\MaterialCrossReferenceNumberDto.cs" />
+    <Compile Include="Dto\PdfDto.cs" />
+    <Compile Include="Dto\PlannedOrderDto.cs" />
+    <Compile Include="Dto\ProductionOrderDto.cs" />
+    <Compile Include="Dto\ProfileVariableDto.cs" />
+    <Compile Include="Handlers\CacheMapUpdateRequestCommandHandler.cs" />
+    <Compile Include="Handlers\MaterialMasterUpdateRequestCommandHandler.cs" />
+    <Compile Include="Handlers\PlannedOrderRequestCommandHandler.cs" />
+    <Compile Include="Handlers\ProductionOrderRequestCommandHandler.cs" />
+    <Compile Include="Handlers\ProductionOrderStatusCommandHandler.cs" />
+    <Compile Include="Handlers\TestCertificateInboundRequestCommandHandler.cs" />
+    <Compile Include="Handlers\TestCertificateOutboundFileRequestCommandHandler.cs" />
+    <Compile Include="Handlers\TestCertificateOutboundTriggerCommandHandler.cs" />
+    <Compile Include="Handlers\TestCertificateOutboundResponseCommandHandler.cs" />
+    <Compile Include="Map\IMapTestCertificateMessage.cs" />
+    <Compile Include="Persistence\FluentNHibernateMessageModule.cs" />
+    <Compile Include="Handlers\ProductAchievementCommandHandler.cs" />
+    <Compile Include="Handlers\ProductAchievementResponseCommandHandler.cs" />
+    <Compile Include="Persistence\Maps\DespatchedPacksByCustomerOrderMap.cs" />
+    <Compile Include="Persistence\Maps\F4101Map.cs" />
+    <Compile Include="Persistence\Maps\F4104Map.cs" />
+    <Compile Include="Persistence\Maps\MapBranchMap.cs" />
+    <Compile Include="Persistence\Maps\MapCompanyCodeMap.cs" />
+    <Compile Include="Persistence\Maps\MapCostCentreGlPostingMap.cs" />
+    <Compile Include="Persistence\Maps\MapDocTypesMap.cs" />
+    <Compile Include="Persistence\Maps\MapGlAccountsGlPostingMap.cs" />
+    <Compile Include="Persistence\Maps\MapLocationMap.cs" />
+    <Compile Include="Persistence\Maps\MapMaterialGroupMap.cs" />
+    <Compile Include="Persistence\Maps\MapPlantMap.cs" />
+    <Compile Include="Persistence\Maps\MapProfitCentreGlPostingMap.cs" />
+    <Compile Include="Persistence\Maps\MapPurchaseGroupMap.cs" />
+    <Compile Include="Persistence\Maps\MapUnitOfMeasureMap.cs" />
+    <Compile Include="Persistence\Maps\OrrSysF3460Z1Map.cs" />
+    <Compile Include="Persistence\Maps\OrrSysF554801ZMap.cs" />
+    <Compile Include="Persistence\Maps\DemandSapJdeMap.cs" />
+    <Compile Include="Persistence\Maps\DemandSapJdeWoMap.cs" />
+    <Compile Include="Persistence\Maps\OrrSysF554801ZHistoryMap.cs" />
+    <Compile Include="Persistence\Maps\OrrSysProcessVariableMap.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Repositories\FormatPlannedOrderData.cs" />
+    <Compile Include="Repositories\DataTableSetup.cs" />
+    <Compile Include="Repositories\FormatTestCertificateData.cs" />
+    <Compile Include="Repositories\IFormatPlannedOrderData.cs" />
+    <Compile Include="Repositories\IFormatTestCertificateData.cs" />
+    <Compile Include="Repositories\OrrSysProcessVariableRepository.cs" />
+    <Compile Include="Repositories\ProductAchievementRepository.cs" />
+    <Compile Include="Map\TestCertifiateMessageMap.cs" />
+    <Compile Include="Repositories\TestCertRepository.cs" />
+    <Compile Include="Repositories\JdeImportRepository.cs" />
+    <Compile Include="Repositories\OrrSysF3460Z1Repository.cs" />
+    <Compile Include="Repositories\OrrSysF554801ZRepository.cs" />
+    <Compile Include="Repositories\IOrrSysRepository.cs" />
+    <Compile Include="Repositories\OrrSysMappingRepository.cs" />
+    <Compile Include="Repositories\SapRepository.cs" />
+    <Compile Include="Repositories\SqlStringQuery.cs" />
+    <Compile Include="SagaData\OrrSysSchedulerSagaData.cs" />
+    <Compile Include="Sagas\OrrSysSchedulerSaga.cs" />
+    <Compile Include="Scheduler\ScheduleProductionOrderStutus.cs" />
+    <Compile Include="Scheduler\OrrSysScheduler.cs" />
+    <Compile Include="Soap\DataInterfacingService\CreateSoapForOrrSysDataInterfacing.cs" />
+    <Compile Include="Soap\DataInterfacingService\ProductionOrderStatus.cs" />
+    <Compile Include="Soap\DataInterfacingService\ICommunicateWithOrrSys.cs" />
+    <Compile Include="Soap\DataInterfacingService\OrrSysDataInterfacingProxy.cs" />
+    <Compile Include="Soap\DataInterfacingService\MaterialMaster.cs" />
+    <Compile Include="Soap\DataInterfacingService\ProductAchievement.cs" />
+    <Compile Include="Soap\SqlReportService\ICommunicateWithSqlReportingServices.cs" />
+    <Compile Include="Soap\SqlReportService\SqlReportingServiceProxy.cs" />
+    <Compile Include="Soap\SqlReportService\TestCertificateOutbound.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Spm.AuditLog.Messages\Spm.AuditLog.Messages.csproj">
+      <Project>{d74073ea-a1c5-4979-8171-4f76d40312ba}</Project>
+      <Name>Spm.AuditLog.Messages</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Spm.File.Watcher.Messages\Spm.File.Watcher.Messages.csproj">
+      <Project>{b84a38e6-95e6-4c40-b923-ace65205f590}</Project>
+      <Name>Spm.File.Watcher.Messages</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Spm.OrrSys.Messages\Spm.OrrSys.Messages.csproj">
+      <Project>{56a10dd7-73ed-49b7-aa16-60005cf22b0f}</Project>
+      <Name>Spm.OrrSys.Messages</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Spm.Service.Messages\Spm.Service.Messages.csproj">
+      <Project>{3ce81eb8-5842-4be2-ab05-14d1074496c8}</Project>
+      <Name>Spm.Service.Messages</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Spm.Shared\Spm.Shared.csproj">
+      <Project>{d909bd0f-c4a4-4e62-9d24-4d2de7472c74}</Project>
+      <Name>Spm.Shared</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <PropertyGroup>
+    <PreBuildEvent>
+    </PreBuildEvent>
+  </PropertyGroup>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+  <PropertyGroup>
+    <StartAction>Program</StartAction>
+    <StartProgram>$(ProjectDir)$(OutputPath)NServiceBus.Host.exe</StartProgram>
+  </PropertyGroup>
+</Project>

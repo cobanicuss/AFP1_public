@@ -1,0 +1,189 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{2D6EFBD3-AADF-419F-A125-401543277195}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Spm.AuditLog.Service</RootNamespace>
+    <AssemblyName>Spm.AuditLog.Service</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+    <LangVersion>default</LangVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Castle.Core, Version=3.3.0.0, Culture=neutral, PublicKeyToken=407dd0808d44fbdc, processorArchitecture=MSIL">
+      <HintPath>..\packages\Castle.Core.3.3.3\lib\net45\Castle.Core.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Castle.Windsor, Version=3.3.0.0, Culture=neutral, PublicKeyToken=407dd0808d44fbdc, processorArchitecture=MSIL">
+      <HintPath>..\packages\Castle.Windsor.3.3.0\lib\net45\Castle.Windsor.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="FluentNHibernate, Version=2.0.1.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\FluentNHibernate.2.0.1.0\lib\net40\FluentNHibernate.dll</HintPath>
+    </Reference>
+    <Reference Include="Iesi.Collections, Version=4.0.0.0, Culture=neutral, PublicKeyToken=aa95f207798dfdb4, processorArchitecture=MSIL">
+      <HintPath>..\packages\Iesi.Collections.4.0.1.4000\lib\net40\Iesi.Collections.dll</HintPath>
+    </Reference>
+    <Reference Include="log4net, Version=2.0.8.0, Culture=neutral, PublicKeyToken=1b44e1d426115821, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\log4net.2.0.0\lib\net40-full\log4net.dll</HintPath>
+    </Reference>
+    <Reference Include="NHibernate, Version=4.0.0.4000, Culture=neutral, PublicKeyToken=aa95f207798dfdb4, processorArchitecture=MSIL">
+      <HintPath>..\packages\NHibernate.4.0.3.4000\lib\net40\NHibernate.dll</HintPath>
+    </Reference>
+    <Reference Include="NServiceBus.Core, Version=5.0.0.0, Culture=neutral, PublicKeyToken=9fc386479f8a226c, processorArchitecture=MSIL">
+      <HintPath>..\packages\NServiceBus.5.2.21\lib\net45\NServiceBus.Core.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="NServiceBus.Host, Version=5.0.0.0, Culture=neutral, PublicKeyToken=9fc386479f8a226c, processorArchitecture=MSIL">
+      <HintPath>..\packages\NServiceBus.Host.5.0.0\lib\net45\NServiceBus.Host.exe</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="NServiceBus.Log4Net">
+      <HintPath>..\packages\NServiceBus.Log4Net.1.0.0\lib\net45\NServiceBus.Log4Net.dll</HintPath>
+    </Reference>
+    <Reference Include="NServiceBus.NHibernate, Version=6.0.0.0, Culture=neutral, PublicKeyToken=9fc386479f8a226c, processorArchitecture=MSIL">
+      <HintPath>..\packages\NServiceBus.NHibernate.6.2.5\lib\net45\NServiceBus.NHibernate.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="NServiceBus.ObjectBuilder.CastleWindsor, Version=5.0.0.0, Culture=neutral, PublicKeyToken=9fc386479f8a226c, processorArchitecture=MSIL">
+      <HintPath>..\packages\NServiceBus.CastleWindsor.5.0.0\lib\net45\NServiceBus.ObjectBuilder.CastleWindsor.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="ServiceControl.Plugin.Nsb5.Heartbeat, Version=3.0.0.0, Culture=neutral, PublicKeyToken=9fc386479f8a226c, processorArchitecture=MSIL">
+      <HintPath>..\packages\ServiceControl.Plugin.Nsb5.Heartbeat.3.0.1\lib\net45\ServiceControl.Plugin.Nsb5.Heartbeat.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Transactions" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Config\AuditQueueConfig.cs" />
+    <Compile Include="Config\DateTimeConvention.cs" />
+    <Compile Include="Config\ErrorQueueConfig.cs" />
+    <Compile Include="Config\LoggingForProfiles.cs" />
+    <Compile Include="Config\ProfileConfig.cs" />
+    <Compile Include="Config\ProfileConfigVariables.cs" />
+    <Compile Include="Domain\AuditActionType.cs" />
+    <Compile Include="Domain\AuditBase.cs" />
+    <Compile Include="Domain\GeneralLedger.cs" />
+    <Compile Include="Domain\GoodsReceipt.cs" />
+    <Compile Include="Domain\GoodsReversal.cs" />
+    <Compile Include="Domain\MaterialMaster.cs" />
+    <Compile Include="Domain\MaterialMasterUpdate.cs" />
+    <Compile Include="Domain\PlannedOrder.cs" />
+    <Compile Include="Domain\ProductAchievement.cs" />
+    <Compile Include="Config\EndpointConfig.cs" />
+    <Compile Include="Domain\ProductionOrder.cs" />
+    <Compile Include="Domain\ProductionOrderStatus.cs" />
+    <Compile Include="Domain\PurchaseOrderChange.cs" />
+    <Compile Include="Domain\PurchaseOrderCreate.cs" />
+    <Compile Include="Domain\TestCertificate.cs" />
+    <Compile Include="Domain\TestCertificateRequest.cs" />
+    <Compile Include="Dto\ExportSprocDto.cs" />
+    <Compile Include="Handlers\GeneralLedgerCommitCommandHandler.cs" />
+    <Compile Include="Handlers\GoodsReceiptCommitCommandHandler.cs" />
+    <Compile Include="Handlers\MaterialMasterCommitCommandHandler.cs" />
+    <Compile Include="Handlers\MaterialMasterUpdateCommitCommandHandler.cs" />
+    <Compile Include="Handlers\PlannedOrderCommitCommandHandler.cs" />
+    <Compile Include="Handlers\ProductionOrderCommitCommandHandler.cs" />
+    <Compile Include="Handlers\ProdutionOrderStatusCommitCommandHandler.cs" />
+    <Compile Include="Handlers\PurchaseOrderCommitCommandHandler.cs" />
+    <Compile Include="Handlers\TestCertificateCommitCommandHandler.cs" />
+    <Compile Include="Handlers\TestCertificateRequestCommitCommandHandler.cs" />
+    <Compile Include="Persistence\FluentNHibernateMessageModule.cs" />
+    <Compile Include="Handlers\ProductAchievementCommitCommandHandler.cs" />
+    <Compile Include="Di\IocInstaller.cs" />
+    <Compile Include="Persistence\Maps\AuditActionTypeMap.cs" />
+    <Compile Include="Persistence\Maps\GeneralLedgerMap.cs" />
+    <Compile Include="Persistence\Maps\GoodsReceiptMap.cs" />
+    <Compile Include="Persistence\Maps\GoodsReversalMap.cs" />
+    <Compile Include="Persistence\Maps\MaterialMasterMap.cs" />
+    <Compile Include="Persistence\Maps\MaterialMasterUpdateMap.cs" />
+    <Compile Include="Persistence\Maps\PlannedOrderMap.cs" />
+    <Compile Include="Persistence\Maps\ProductAchievementMap.cs" />
+    <Compile Include="Persistence\Maps\ProductionOrderMap.cs" />
+    <Compile Include="Persistence\Maps\ProductionOrderStatusMap.cs" />
+    <Compile Include="Persistence\Maps\PurchaseOrderChangeMap.cs" />
+    <Compile Include="Persistence\Maps\PurchaseOrderCreateMap.cs" />
+    <Compile Include="Persistence\Maps\TestCertificateMap.cs" />
+    <Compile Include="Persistence\Maps\TestCertificateRequestMap.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Repository\AuditLogRepository.cs" />
+    <Compile Include="Repository\AuditLogRollOver.cs" />
+    <Compile Include="Constants.cs" />
+    <Compile Include="Repository\IAuditLogRepository.cs" />
+    <Compile Include="Repository\IImplementAuditLogRollOver.cs" />
+    <Compile Include="SagaData\AuditLogSchedulerSagaData.cs" />
+    <Compile Include="Sagas\AuditLogSchedulerSaga.cs" />
+    <Compile Include="Scheduler\AuditLogScheduler.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Spm.AuditLog.Messages\Spm.AuditLog.Messages.csproj">
+      <Project>{d74073ea-a1c5-4979-8171-4f76d40312ba}</Project>
+      <Name>Spm.AuditLog.Messages</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Spm.Shared\Spm.Shared.csproj">
+      <Project>{d909bd0f-c4a4-4e62-9d24-4d2de7472c74}</Project>
+      <Name>Spm.Shared</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+  <PropertyGroup>
+    <StartAction>Program</StartAction>
+    <StartProgram>$(ProjectDir)$(OutputPath)NServiceBus.Host.exe</StartProgram>
+  </PropertyGroup>
+  <PropertyGroup>
+    <PreBuildEvent>
+    </PreBuildEvent>
+  </PropertyGroup>
+</Project>
